@@ -12,7 +12,7 @@ const Home = () => {
         {/* Hero Section */}
         <section
           className="relative flex flex-col items-center justify-center text-center h-screen bg-cover bg-center"
-          style={{ backgroundImage: "url('https://img.freepik.com/free-photo/galaxy-night-panoramic_23-2148895359.jpg?t=st=1728937984~exp=1728941584~hmac=e93ee89aec385898c2896c970ea79d8a4866ba591e078af106bfe8bc7a3a43fb&w=1800')" }} // Mars fotoğrafı buraya eklenir.
+          style={{ backgroundImage: "url('/images/galaxy-night-panoramic.jpg')" }}
         >
           {/* NavBar */}
           <header className="absolute top-0 left-0 w-full bg-black bg-opacity-50 p-4">
