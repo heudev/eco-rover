@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 :root {
   --background: #ffffff;
@@ -24,4 +24,96 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  /* Kart döndürme CSS'i */
+  .perspective {
+    perspective: 1000px;
+  }
+  
+  .team-member-img {
+    width: 60px; /* Genişlik */
+    height: 60px; /* Yükseklik */
+    border-radius: 50%; /* Tam daire şeklinde yapmak için */
+    object-fit: cover; /* Fotoğrafın taşmadan tam olarak sığması */
+  }
+  
+  /* Kartın arkasından ışık çıkma efekti */
+  .glow-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Glow efektinin dairesel görünmesi için */
+    box-shadow: 0 0 20px 10px rgba(213, 114, 73, 255); /* Sıcak sarı ışık efekti */
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Işık için 0.5s geçiş süresi */
+    transform: scale(1);
+    z-index: 0;
+  }
+  
+  /* Hover sırasında ışık efektinin görünmesi */
+  .group:hover .glow-effect {
+    opacity: 1; /* Hover sırasında ışık efekti görünür */
+    transform: scale(1.1); /* Hafif bir büyüme ile efektin yayılması */
+  }
+  
+  /* Arka yüzün görünmesi için geçiş */
+  .group .backface-hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Arka yüz için de 0.5s geçiş süresi */
+  }
+  
+  /* Hover sırasında arka yüz görünmez */
+  .group:hover .backface-hidden {
+    opacity: 0; /* Arka yüz görünmez */
+  }
+  
+  /* Ön yüzün arka planının silikleşmesi için */
+  .group:hover .front-face {
+    opacity: 0.5; /* Ön yüz silik görünüm */
+    transition: opacity 0.5s ease; /* Geçiş süresi */
+  }
+  
+  /* Hover durumunda yazıların görünürlüğünü ayarlama */
+  .hover-effect {
+    transition: opacity 0.3s ease; /* Geçiş efekti */
+  }
+  
+  .group:hover .hover-effect {
+    opacity: 0; /* Hover durumunda yazıların görünürlüğünü sıfıra düşür */
+  }
+  
+  /* Fotoğrafın opaklığını azaltma */
+  .group:hover .team-member-img {
+    opacity: 0.5; /* Fotoğrafın opaklığını azalt */
+    transition: opacity 0.5s ease; /* Geçiş süresi */
+  }
+  
+  /* Kartlar için 3D efekt ayarları */
+  .front-face,
+  .backface-hidden {
+    backface-visibility: hidden; /* Arka yüzün dönerken gizlenmesi */
+  }
+  
+  /* Flex özellikleri ile kartlar arası boşluğu kaldır */
+  .group {
+    position: relative;
+    display: flex; /* Flex kullanarak yan yana hizalama */
+    justify-content: center; /* Ortada hizalama */
+    align-items: center; /* Yükseklik olarak ortada hizalama */
+    margin: 0; /* Dışarıdaki marginleri sıfırla */
+    gap: 0; /* Kartlar arası boşluğu sıfırla */
+  }
+  
+  /* Kart için box-sizing ayarı */
+  * {
+    box-sizing: border-box; /* Padding ve border boyutunu dahil et */
+  }
+  
+  /* Kart içeriği için padding ayarları */
+  .front-face, .backface-hidden {
+    padding: 0; /* Kart içindeki paddingleri sıfırla */
+  }
+
 }
