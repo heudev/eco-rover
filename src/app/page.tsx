@@ -48,11 +48,22 @@ export default function Home() {
 
         {/* Mission & Vision Section */}
         <section id="mission" className="py-20 bg-black">
-          <div className="container mx-auto text-center px-6 lg:px-0">
-            <h3 className="text-4xl font-semibold text-white mb-6">Mission & Vision</h3>
-            <p className="text-lg text-gray-300">
-              Our mission is to explore uncharted territories in space. Our vision is to inspire the next generation of space explorers.
-            </p>
+          <div className="container mx-auto flex flex-col lg:flex-row items-center lg:items-start px-6 lg:px-12 gap-12 mt-20">
+            <div className="lg:w-1/2 text-left">
+               {/* Mission Section */}
+               <h3 className="text-center text-4xl font-semibold text-white mb-6">Our Mission</h3>
+                <p className="text-lg text-gray-300 mb-8">
+                  As ECO-ROVER, we aim to develop innovative, sustainable, and high-performance rover vehicles by supporting the development of university students in the field of science and technology. Our goal as a team is to represent our country, our university, and our supporters in the best way on international platforms while providing practical experience for future engineers.
+                </p>
+            </div>
+          
+            <div className="lg:w-1/2 text-left">
+              {/* Vision Section */}
+              <h3 className="text-center text-4xl font-semibold text-white mb-6">Our Vision</h3>
+              <p className="text-lg text-gray-300 mb-8">
+               As a pioneering team in space exploration, we aim to produce sustainable solutions in international competitions with innovative technologies and make our university a recognized leader in the global scientific community. ECO-ROVER aims to inspire future space projects by supporting student entrepreneurship and teamwork.
+              </p>
+            </div>
           </div>
         </section>
 
