@@ -3,6 +3,17 @@ import Head from 'next/head';
 import Image from 'next/image';
 
 export default function Home() {
+  const sponsors = [
+    {
+      name: 'AKS Römork Endüstri',
+      logo: '/sponsorship/aksromork.jpg',
+      links: [
+        { label: 'Website 1', url: 'https://www.aksromork.com.tr' },
+        { label: 'Website 2', url: 'https://romorkcu.com/?fbclid=PAZXh0bgNhZW0CMTEAAaatKe5t0Rr5JUbll9dNjLKLzNRI7LXO5zhh7dhOQOTkmcl0mOzeRK5FVE4_aem_HP0TJYCQQ-HZcajQ_d_85g' },
+        { label: 'Instagram', url: 'https://www.instagram.com/romorkcucom/' },
+      ],
+    },
+  ];
   return (
     <div className="min-h-screen bg-black text-gray-300 scroll-smooth">
       <Head>
@@ -22,7 +33,6 @@ export default function Home() {
           <div className="bg-black bg-opacity-70 p-8 rounded-lg">
             <h2 className="text-5xl font-bold text-white">Explore Mars with Our Rover</h2>
             <p className="mt-4 text-xl text-gray-300">Join our mission to uncover the mysteries of Mars.</p>
-            <a href="#mission" className="mt-8 btn btn-ghost glass">Learn More</a>
           </div>
         </section>
 
@@ -37,7 +47,7 @@ export default function Home() {
         </section>
 
         {/* Mission & Vision Section */}
-        <section id="mission-vision" className="py-20 bg-black">
+        <section id="mission" className="py-20 bg-black">
           <div className="container mx-auto text-center px-6 lg:px-0">
             <h3 className="text-4xl font-semibold text-white mb-6">Mission & Vision</h3>
             <p className="text-lg text-gray-300">
@@ -64,7 +74,7 @@ export default function Home() {
         </section>
 
         {/* Past Projects Section */}
-        <section id="projects" className="py-20 bg-black">
+        {/*  <section id="projects" className="py-20 bg-black">
           <div className="container mx-auto text-center px-6 lg:px-0">
             <h3 className="text-4xl font-semibold text-white mb-6">Our Past Projects</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -85,10 +95,10 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Current Work Section */}
-        <section id="current-work" className="py-20">
+        <section id="projects" className="py-20">
           <div className="container mx-auto text-center px-6 lg:px-0">
             <h3 className="text-4xl font-semibold text-white mb-6">What We&apos;ve Done So Far</h3>
             <p className="text-lg text-gray-300">
@@ -97,17 +107,33 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Sponsors Section */}
+        {/* Current Sponsors Section */}
         <section id="sponsors" className="py-20 bg-black">
           <div className="container mx-auto text-center px-6 lg:px-0">
-            <h3 className="text-4xl font-semibold text-white mb-6">Our Sponsors</h3>
-            <p className="text-lg text-gray-300 mb-8">
-              We are grateful for the support of our sponsors who make our mission possible.
-            </p>
+            <h3 className="text-4xl font-semibold text-white mb-6">Our Current Sponsors</h3>
+            <p className="text-lg text-gray-300 mb-8">We are grateful for the support of our partners.</p>
             <div className="flex flex-wrap justify-center gap-8">
-              <Image src="https://picsum.photos/1920/1080" width={1920} height={1080} alt="Sponsor 1" className="w-1/3 md:w-1/4 rounded-lg" />
-              <Image src="https://picsum.photos/1920/1080" width={1920} height={1080} alt="Sponsor 1" className="w-1/3 md:w-1/4 rounded-lg" />
-              <Image src="https://picsum.photos/1920/1080" width={1920} height={1080} alt="Sponsor 1" className="w-1/3 md:w-1/4 rounded-lg" />
+              {sponsors.map((sponsor, index) => (
+                <div key={index} className="transition-transform transform hover:scale-105 text-center">
+                  <div className="bg-white rounded-lg p-4 shadow-lg flex items-center justify-center mb-2">
+                    <Image src={sponsor.logo} width={1920} height={1080} alt={sponsor.name} className='w-96 rounded-lg' />
+                  </div>
+                  <p className="mt-2 text-white font-semibold">{sponsor.name}</p>
+                  <div className="flex flex-col items-center mt-2 space-y-1">
+                    {sponsor.links.map((link, linkIndex) => (
+                      <a
+                        key={linkIndex}
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-400 hover:text-white transition-colors"
+                      >
+                        {link.label}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -123,9 +149,9 @@ export default function Home() {
           <div className="container mx-auto text-center px-6 lg:px-0">
             <h3 className="text-4xl font-semibold text-white mb-6">Get in Touch</h3>
             <p className="text-lg text-gray-300 mb-8">Want to learn more about our mission or join the team? Contact us below.</p>
-            <a href="mailto:team@marsrover.com" className="btn btn-ghost glass">Contact Us</a>
+            <a href="mailto:ieu.ecorover@gmail.com" className="btn btn-ghost glass">Contact Us</a>
             <p className="mt-4 text-gray-400">
-              <a href="/sponsorship.pdf" className="hover:text-white">Download our sponsorship brochure</a>
+              <a href="/file/ECO-ROVERSponsorlukDosyası.pdf" className="hover:text-white">Download our sponsorship brochure</a>
             </p>
           </div>
         </section>

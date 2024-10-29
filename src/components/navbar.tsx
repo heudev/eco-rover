@@ -13,9 +13,8 @@ export default function Navbar() {
                         alt="Logo"
                         width={1920}
                         height={1080}
-                        className='rounded-full h-20 w-20 mx-auto'
+                        className='rounded-full w-20 h-20 md:h-32 md:w-32 mx-auto'
                     />
-                    <h1 className="text-2xl font-bold text-white ml-4 whitespace-nowrap">EcoRover Team</h1>
                 </div>
                 <div className="navbar bg-opacity-0 flex justify-end">
 
@@ -27,24 +26,26 @@ export default function Navbar() {
                             </svg>
                         </label>
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a href="#about">About</a></li>
+                            <li><Link href="/#about">About</Link></li>
+                            <li><Link href="/#mission">Mission</Link></li>
+                            <li><Link href="/#erc">ERC</Link></li>
+                            {/*  <li><Link href="/#projects">Projects</Link></li> */}
+                            <li><Link href="/#contact">Contact</Link></li>
+                            <li><Link href="/sponsorship">Sponsorship</Link></li>
                             <li><Link href="/team">Team</Link></li>
-                            <li><a href="#mission">Mission</a></li>
-                            <li><a href="#erc">ERC</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
 
                     {/* Full Menu for Larger Screens */}
                     <nav className="hidden md:flex">
                         <ul className="flex space-x-6 text-gray-400">
-                            <li><a href="#about" className="hover:text-white">About</a></li>
+                            <li><Link href="/#about" className="hover:text-white">About</Link></li>
+                            <li><Link href="/#mission" className="hover:text-white">Mission</Link></li>
+                            <li><Link href="/#erc" className="hover:text-white">ERC</Link></li>
+                            {/*  <li><Link href="/#projects" className="hover:text-white">Projects</Link></li> */}
+                            <li><Link href="/#contact" className="hover:text-white">Contact</Link></li>
+                            <li><Link href="/sponsorship" className="hover:text-white">Sponsorship</Link></li>
                             <li><Link href="/team" className="hover:text-white">Team</Link></li>
-                            <li><a href="#mission" className="hover:text-white">Mission</a></li>
-                            <li><a href="#erc" className="hover:text-white">ERC</a></li>
-                            <li><a href="#projects" className="hover:text-white">Projects</a></li>
-                            <li><a href="#contact" className="hover:text-white">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
