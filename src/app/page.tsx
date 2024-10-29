@@ -1,4 +1,4 @@
-import Navbar from '@/components/storage/navbar';
+import Navbar from '@/components/navbar';
 import Head from 'next/head';
 import Image from 'next/image';
 
@@ -16,7 +16,7 @@ export default function Home() {
           className="relative flex flex-col items-center justify-center text-center h-screen bg-cover bg-center"
           style={{ backgroundImage: "url('/images/galaxy-night-panoramic.jpg')" }}
         >
-          <Navbar/>
+          <Navbar />
 
           {/* Hero Content */}
           <div className="bg-black bg-opacity-70 p-8 rounded-lg">
