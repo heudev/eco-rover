@@ -24,7 +24,7 @@ export default function SponsorshipPage() {
 
                     {/* Hero Content */}
                 
-                    <div className="container mx-auto text-center px-6 mt-20 lg:px-0">
+                    <div className="container mx-auto text-center px-6 mt-60 lg:px-0 flex flex-col items-center">
                         <h3 className="text-4xl font-semibold text-white mb-6">Partners on Our Rover Journey</h3>
                         <p className="text-lg text-gray-300 mb-8">We are grateful for the support of our partners.</p>
                         <div className="flex flex-wrap justify-center gap-8">
