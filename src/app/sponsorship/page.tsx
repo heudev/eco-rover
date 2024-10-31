@@ -1,22 +1,11 @@
 // components/SponsorshipPage.tsx
 import React from 'react';
+import { sponsorShip } from '@/constants/SponsorshipPage';
 import Navbar from '@/components/navbar';
 import Head from 'next/head';
 import Image from 'next/image';
 
 export default function SponsorshipPage() {
-    const sponsors = [
-        {
-            name: 'AKS Römork Endüstri',
-            logo: '/sponsorship/aksromork.jpg',
-            links: [
-                { label: 'Website 1', url: 'https://www.aksromork.com.tr' },
-                { label: 'Website 2', url: 'https://romorkcu.com/?fbclid=PAZXh0bgNhZW0CMTEAAaatKe5t0Rr5JUbll9dNjLKLzNRI7LXO5zhh7dhOQOTkmcl0mOzeRK5FVE4_aem_HP0TJYCQQ-HZcajQ_d_85g' },
-                { label: 'Instagram', url: 'https://www.instagram.com/romorkcucom/' },
-            ],
-        },
-    ];
-
 
     return (
         <div className="min-h-screen bg-black text-gray-300">
@@ -28,42 +17,35 @@ export default function SponsorshipPage() {
             <main>
                 {/* Hero Section */}
                 <section
-                    className="relative flex flex-col items-center justify-center text-center h-screen bg-cover bg-center"
+                    className="relative flex flex-col items-center justify-center text-center min-h-screen bg-cover bg-center"
                     style={{ backgroundImage: "url('/images/galaxy-night-panoramic.jpg')" }}
                 >
                     <Navbar />
 
                     {/* Hero Content */}
-                    <div className="bg-black bg-opacity-70 p-8 rounded-lg">
-                        <h2 className="text-5xl font-bold text-white">Partner with Us to Reach New Heights</h2>
-                        <p className="mt-4 text-xl text-gray-300">Join Eco Rover and be a part of groundbreaking space exploration.</p>
-                    </div>
-                </section>
-
-                {/* Current Sponsors Section */}
-                <section id="current-sponsors" className="py-20 bg-black">
-                    <div className="container mx-auto text-center px-6 lg:px-0">
-                        <h3 className="text-4xl font-semibold text-white mb-6">Our Current Sponsors</h3>
+                
+                    <div className="container mx-auto text-center px-6 mt-20 lg:px-0">
+                        <h3 className="text-4xl font-semibold text-white mb-6">Partners on Our Rover Journey</h3>
                         <p className="text-lg text-gray-300 mb-8">We are grateful for the support of our partners.</p>
                         <div className="flex flex-wrap justify-center gap-8">
-                            {sponsors.map((sponsor, index) => (
+                            {sponsorShip.sponsor.map((sponsor, index) => (
                                 <div key={index} className="transition-transform transform hover:scale-105 text-center">
                                     <div className="bg-white rounded-lg p-4 shadow-lg flex items-center justify-center mb-2">
-                                        <Image src={sponsor.logo} width={1920} height={1080} alt={sponsor.name} className='w-96 rounded-lg' />
+                                        <Image src={sponsor.url} width={1920} height={1080} alt={sponsor.label} className='h-36 w-96 rounded-lg' />
                                     </div>
-                                    <p className="mt-2 text-white font-semibold">{sponsor.name}</p>
+                                    <p className="mt-2 text-white font-semibold">{sponsor.label}</p>
                                     <div className="flex flex-col items-center mt-2 space-y-1">
-                                        {sponsor.links.map((link, linkIndex) => (
-                                            <a
-                                                key={linkIndex}
-                                                href={link.url}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="text-gray-400 hover:text-white transition-colors"
-                                            >
-                                                {link.label}
+                                        {sponsor.link1 && (
+                                            <a href={sponsor.link1}target="_blank" rel="noopener noreferrer"className="text-gray-400 hover:text-white transition-colors"> Website 1</a>
+                                        )}
+                                        {sponsor.link2 && (
+                                            <a href={sponsor.link2} target="_blank"rel="noopener noreferrer"className="text-gray-400 hover:text-white transition-colors">  Website 2</a>
+                                        )}
+                                        {sponsor.instagram && (
+                                            <a href={sponsor.instagram}target="_blank"rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors" >
+                                                Instagram
                                             </a>
-                                        ))}
+                                        )}
                                     </div>
                                 </div>
                             ))}

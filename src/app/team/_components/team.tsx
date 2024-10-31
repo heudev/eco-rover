@@ -70,7 +70,6 @@ export function Menu() {
                 <li>
                     <button onClick={() => setActiveTeam(activeTeam === "Electronics" ? null : "Electronics")} className="w-64 flex flex-row items-center justify-center space-x-2 text-white  bg-orange-800 hover:bg-orange-900 focus:outline-none focus:ring-2 focus:ring-orange-800 focus:text-white">
                         <svg className="h-8 w-8 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">  <rect x="4" y="4" width="16" height="16" rx="2" ry="2" />  <rect x="9" y="9" width="6" height="6" />  <line x1="9" y1="1" x2="9" y2="4" />  <line x1="15" y1="1" x2="15" y2="4" />  <line x1="9" y1="20" x2="9" y2="23" />  <line x1="15" y1="20" x2="15" y2="23" />  <line x1="20" y1="9" x2="23" y2="9" />  <line x1="20" y1="14" x2="23" y2="14" />  <line x1="1" y1="9" x2="4" y2="9" />  <line x1="1" y1="14" x2="4" y2="14" /></svg>
-
                         <span>Electronics</span>
                     </button>
                 </li>
@@ -80,11 +79,17 @@ export function Menu() {
                         <span>Science</span>
                     </button>
                 </li>
+                <li>
+                    <button onClick={() => setActiveTeam(activeTeam === "HumanResourceFinance" ? null : "HumanResourceFinance")} className="w-64 flex flex-row items-center justify-center ml-2 text-white  bg-orange-800 hover:bg-orange-900 focus:outline-none focus:ring-2 focus:ring-orange-800 focus:text-white">
+                        <svg className="h-8 w-8 text-white"  fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                        <span>Human Resources & Finance</span>
+                    </button>
+                </li>
             </ul>
 
             {/* Aktif takımın üyelerini göster */}
             <div className={`flex flex-col items-center transition-all duration-500 ${activeTeam ? 'opacity-100' : 'opacity-0 h-0 overflow-hidden'} mx-auto max-w-screen-lg`}>
-                <div className={`grid gap-24 ${activeTeam === 'Science' ? 'grid-cols-1' : activeTeam === 'Mechanics' ? 'grid-cols-1 lg:grid-cols-3' : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-4'}`}>
+            <div className={`grid gap-24 ${ activeTeam === 'Science' || activeTeam === 'HumanResourceFinance' ? 'grid-cols-1' : activeTeam === 'Mechanics' ? 'grid-cols-1 lg:grid-cols-2': 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-4' }`}>
                     {activeTeam && teamData[activeTeam]?.map((member, index) => (
                         <div className="flex justify-center items-center" key={index}>
                             <Team name={member.name} role={member.role} Department={member.Department} imageUrl={member.imageUrl} />

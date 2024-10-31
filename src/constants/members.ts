@@ -1,7 +1,7 @@
 const teamData: Record<string, { name: string; role: string; Department: string; imageUrl: string }[]> = {
     Mechanics: [
         { name: "Ege Mutlu", role: "Captain of the Mechanical Team", Department: "Focuses on electrical systems.", imageUrl: "/images/egeMutlu.jpg" },
-        { name: "Ali Efe Gür", role: "", Department: "", imageUrl: "/images/aliEfeGur.jpg" },
+       // { name: "Ali Efe Gür", role: "", Department: "", imageUrl: "/images/aliEfeGur.jpg" },
         { name: "Mert Aktaş", role: "", Department: "", imageUrl: "/images/mertAktas.jpg" },
     ],
     Software: [
@@ -30,6 +30,9 @@ const teamData: Record<string, { name: string; role: string; Department: string;
     Science: [
         { name: "Alara Rodoplu", role: "Head of the Science", Department: "Science", imageUrl: "/images/alaraRodoplu.jpg" },
     ],
+    HumanResourceFinance: [
+        {name: "Irmak İşal", role:"Head of the Finance", Department: "", imageUrl:"https://media.licdn.com/dms/image/v2/D4D03AQE9APTpFyiUyw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1710583941967?e=2147483647&v=beta&t=10c22P0AohC2OBuxhOrLzmNeK9jw7g1mQLbKGA1FY5g" },                    
+    ]
 };
 
 export { teamData };
