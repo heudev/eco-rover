@@ -24,8 +24,8 @@ export default function SponsorshipPage() {
 
                     {/* Hero Content */}
                 
-                    <div className="container mx-auto text-center px-6 mt-60 lg:px-0 flex flex-col items-center">
-                        <h3 className="text-4xl font-semibold text-white mb-6">Partners on Our Rover Journey</h3>
+                    <div className="container mx-auto text-center px-6 mt-40 lg:px-0 flex flex-col items-center">
+                        <h3 className="text-4xl font-semibold text-white mb-6">Our Current Sponsors</h3>
                         <p className="text-lg text-gray-300 mb-8">We are grateful for the support of our partners.</p>
                         <div className="flex flex-wrap justify-center gap-8">
                             {sponsorShip.sponsor.map((sponsor, index) => (
@@ -36,7 +36,7 @@ export default function SponsorshipPage() {
                                     <p className="mt-2 text-white font-semibold">{sponsor.label}</p>
                                     <div className="flex flex-col items-center mt-2 space-y-1">
                                         {sponsor.link1 && (
-                                            <a href={sponsor.link1}target="_blank" rel="noopener noreferrer"className="text-gray-400 hover:text-white transition-colors"> Website 1</a>
+                                            <a href={sponsor.link1}target="_blank" rel="noopener noreferrer"className="text-gray-400 hover:text-white transition-colors"> Website</a>
                                         )}
                                         {sponsor.link2 && (
                                             <a href={sponsor.link2} target="_blank"rel="noopener noreferrer"className="text-gray-400 hover:text-white transition-colors">  Website 2</a>

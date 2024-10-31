@@ -1,19 +1,10 @@
+import { sponsorShip } from '@/constants/SponsorshipPage';
 import Navbar from '@/components/navbar';
 import Head from 'next/head';
 import Image from 'next/image';
 
 export default function Home() {
-  const sponsors = [
-    {
-      name: 'AKS Römork Endüstri',
-      logo: '/sponsorship/aksromork.jpg',
-      links: [
-        { label: 'Website 1', url: 'https://www.aksromork.com.tr' },
-        { label: 'Website 2', url: 'https://romorkcu.com/?fbclid=PAZXh0bgNhZW0CMTEAAaatKe5t0Rr5JUbll9dNjLKLzNRI7LXO5zhh7dhOQOTkmcl0mOzeRK5FVE4_aem_HP0TJYCQQ-HZcajQ_d_85g' },
-        { label: 'Instagram', url: 'https://www.instagram.com/romorkcucom/' },
-      ],
-    },
-  ];
+  
   return (
     <div className="min-h-screen bg-black text-gray-300 scroll-smooth">
       <Head>
@@ -124,27 +115,31 @@ export default function Home() {
             <h3 className="text-4xl font-semibold text-white mb-6">Our Current Sponsors</h3>
             <p className="text-lg text-gray-300 mb-8">We are grateful for the support of our partners.</p>
             <div className="flex flex-wrap justify-center gap-8">
-              {sponsors.map((sponsor, index) => (
-                <div key={index} className="transition-transform transform hover:scale-105 text-center">
-                  <div className="bg-white rounded-lg p-4 shadow-lg flex items-center justify-center mb-2">
-                    <Image src={sponsor.logo} width={1920} height={1080} alt={sponsor.name} className='w-96 rounded-lg' />
-                  </div>
-                  <p className="mt-2 text-white font-semibold">{sponsor.name}</p>
-                  <div className="flex flex-col items-center mt-2 space-y-1">
-                    {sponsor.links.map((link, linkIndex) => (
-                      <a
-                        key={linkIndex}
-                        href={link.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-gray-400 hover:text-white transition-colors"
-                      >
-                        {link.label}
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              ))}
+                {sponsorShip.sponsor.map((sponsor, index) => (
+                    <div key={index} className="transition-transform transform hover:scale-105 text-center">
+                        <div className="bg-white rounded-lg p-4 shadow-lg flex items-center justify-center mb-2">
+                            <Image 
+                                src={sponsor.url} 
+                                width={1920} 
+                                height={1080} 
+                                alt={sponsor.label} 
+                                className='h-36 w-96 rounded-lg' 
+                            />
+                        </div>
+                        <p className="mt-2 text-white font-semibold">{sponsor.label}</p>
+                        <div className="flex flex-col items-center mt-2 space-y-1">
+                            {sponsor.link1 && (
+                                <a href={sponsor.link1} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Website</a>
+                            )}
+                            {sponsor.link2 && (
+                                <a href={sponsor.link2} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Website 2</a>
+                            )}
+                            {sponsor.instagram && (
+                                <a href={sponsor.instagram} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Instagram</a>
+                            )}
+                        </div>
+                    </div>
+                ))}
             </div>
           </div>
         </section>
