@@ -89,7 +89,7 @@ export function Menu() {
 
             {/* Aktif takımın üyelerini göster */}
             <div className={`flex flex-col items-center transition-all duration-500 ${activeTeam ? 'opacity-100' : 'opacity-0 h-0 overflow-hidden'} mx-auto max-w-screen-lg`}>
-            <div className={`grid gap-24 ${ activeTeam === 'Science' || activeTeam === 'HumanResourceFinance' ? 'grid-cols-1' : activeTeam === 'Mechanics' ? 'grid-cols-1 lg:grid-cols-2': 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-4' }`}>
+            <div className={`grid gap-24 ${ activeTeam === 'Science' || activeTeam === 'HumanResourceFinance' ? 'grid-cols-1' : activeTeam === 'Mechanics' ? 'grid-cols-1 lg:grid-cols-2':activeTeam === 'Electronics' ? 'grid-cols-1 lg:grid-cols-3': 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-4' }`}>
                     {activeTeam && teamData[activeTeam]?.map((member, index) => (
                         <div className="flex justify-center items-center" key={index}>
                             <Team name={member.name} role={member.role} Department={member.Department} imageUrl={member.imageUrl} />

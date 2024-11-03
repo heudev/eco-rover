@@ -28,7 +28,7 @@ export default function Navbar() {
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                             <li><Link href="/#about">About</Link></li>
                             <li><Link href="/mission">Vision & Mission</Link></li>
-                            <li><Link href="/#erc">ERC</Link></li>
+                            <li><Link href="/erc">ERC</Link></li>
                             {/*  <li><Link href="/#projects">Projects</Link></li> */}
                             <li><Link href="/#contact">Contact</Link></li>
                             <li><Link href="/sponsorship">Sponsorship</Link></li>
@@ -41,7 +41,7 @@ export default function Navbar() {
                         <ul className="flex space-x-6 text-gray-400">
                             <li><Link href="/#about" className="hover:text-white">About</Link></li>
                             <li><Link href="/mission" className="hover:text-white">Vision & Mission</Link></li>
-                            <li><Link href="/#erc" className="hover:text-white">ERC</Link></li>
+                            <li><Link href="/erc" className="hover:text-white">ERC</Link></li>
                             {/*  <li><Link href="/#projects" className="hover:text-white">Projects</Link></li> */}
                             <li><Link href="/#contact" className="hover:text-white">Contact</Link></li>
                             <li><Link href="/sponsorship" className="hover:text-white">Sponsorship</Link></li>

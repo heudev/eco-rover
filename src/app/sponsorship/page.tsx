@@ -2,6 +2,7 @@
 import React from 'react';
 import { sponsorShip } from '@/constants/SponsorshipPage';
 import Navbar from '@/components/navbar';
+import Contact from '@/components/contact';
 import Head from 'next/head';
 import Image from 'next/image';
 
@@ -33,17 +34,18 @@ export default function SponsorshipPage() {
                                     <div className="bg-white rounded-lg p-4 shadow-lg flex items-center justify-center mb-2">
                                         <Image src={sponsor.url} width={1920} height={1080} alt={sponsor.label} className='h-36 w-96 rounded-lg' />
                                     </div>
-                                    <p className="mt-2 text-white font-semibold">{sponsor.label}</p>
-                                    <div className="flex flex-col items-center mt-2 space-y-1">
-                                        {sponsor.link1 && (
-                                            <a href={sponsor.link1}target="_blank" rel="noopener noreferrer"className="text-gray-400 hover:text-white transition-colors"> Website</a>
+                                    <p className="mt-2 text-white font-semibold">
+                                    {sponsor.link1 && (
+                                            <a href={sponsor.link1}target="_blank" rel="noopener noreferrer"className="text-gray-400 hover:text-white transition-colors"> 
+                                            <button className="bg-orange-800 hover:bg-orange-900 text-white font-bold py-2 px-4 rounded-full transition duration-300">
+                                                {sponsor.label}
+                                            </button></a>
                                         )}
-                                        {sponsor.link2 && (
-                                            <a href={sponsor.link2} target="_blank"rel="noopener noreferrer"className="text-gray-400 hover:text-white transition-colors">  Website 2</a>
-                                        )}
+                                    </p>
+                                    <div className="flex flex-col items-center mt-2 space-x-40">
                                         {sponsor.instagram && (
                                             <a href={sponsor.instagram}target="_blank"rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors" >
-                                                Instagram
+                                            <svg className="h-8 w-8 text-gradient-to-r from-orange-600 to-rose-700"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth="2"  strokeLinecap="round"  strokeLinejoin="round">  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg>
                                             </a>
                                         )}
                                     </div>
@@ -135,23 +137,7 @@ export default function SponsorshipPage() {
 
 
                 {/* Call to Action Section */}
-                <section
-                    id="join-us"
-                    className="py-20 text-center bg-fixed bg-cover bg-center"
-                    style={{
-                        backgroundImage: "url('https://images.unsplash.com/photo-1673586410488-b694d350756e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fHw%3D')",
-                        backgroundAttachment: "fixed"
-                    }}
-                >
-                    <div className="bg-black bg-opacity-70 p-8 rounded-lg max-w-2xl mx-auto">
-                        <h3 className="text-4xl font-semibold text-white mb-6">Ready to Make a Difference?</h3>
-                        <p className="text-lg text-gray-300 mb-8">Connect with us and let’s work together to achieve something extraordinary.</p>
-                        <a href="mailto:ieu.ecorover@gmail.com" className="btn btn-ghost glass">Contact Us</a>
-                        <p className="mt-4 text-gray-400">
-                            <a href="/file/ECO-ROVERSponsorlukDosyası.pdf" className="hover:text-white">Download our sponsorship brochure</a>
-                        </p>
-                    </div>
-                </section>
+                <Contact />
             </main>
 
             <footer className="bg-black py-6">

@@ -70,7 +70,7 @@ export default function TeamPage() {
 
                                 <div className="flex flex-wrap flex-col lg:flex-row items-center gap-24 mx-auto p-4">
                                     <TeamMemberCard name="Pınar Oğuz Ekim" role="Advisor" Department="" imageUrl="https://odin-oasis.izmirekonomi.edu.tr/images/photos/32462caecc122eb133c171e61f69dca9bd08d662.jpg" />
-                                    <TeamMemberCard name="Şeniz Ertuğrul" role="Advisor" Department="" imageUrl="/images/senizErtugrul.png" />
+                                    <TeamMemberCard name="Şeniz Ertuğrul" role="Advisor" Department="" imageUrl="/members/senizErtugrul.png" />
                                 </div>
 
                             </div>
@@ -83,8 +83,8 @@ export default function TeamPage() {
                             <div className="flex flex-wrap justify-center items-center w-full mb-16">
 
                                 <div className="flex flex-col lg:flex-row items-center gap-24 mx-auto p-4">
-                                    <TeamMemberCard name="Burakcan Akçit" role="Lead" Department="" imageUrl="/images/burakcanAkcit.jpg" />
-                                    <TeamMemberCard name="Berkay Bağcı" role="Lead" Department="" imageUrl="/images/berkayBagcı.jpg" />
+                                    <TeamMemberCard name="Burakcan Akçit" role="Lead" Department="" imageUrl="/members/burakcanAkcit.jpg" />
+                                    <TeamMemberCard name="Berkay Bağcı" role="Lead" Department="" imageUrl="/members/berkayBagcı.jpg" />
                                 </div>
 
                             </div>
@@ -97,10 +97,10 @@ export default function TeamPage() {
                             <div className="flex flex-wrap justify-center items-center w-full mb-16">
 
                                 <div className="flex flex-wrap justify-center flex-col lg:flex-row items-center gap-16 mx-auto p-4">
-                                    <TeamMemberCard name="Alara Rodoplu" role="Head of the Science" Department="" imageUrl="/images/alaraRodoplu.jpg" />
-                                    <TeamMemberCard name="Uğur Emin Baynal" role="Captain of the Software Team" Department="" imageUrl="/images/ugurEminBaynal.jpg" />
-                                    <TeamMemberCard name="Arda Demirdöğen" role="Captain of the Electronic Team" Department="" imageUrl="/images/ardaDemirdogen.jpg" />
-                                    <TeamMemberCard name="Ege Mutlu" role="Captain of the Mechanical Team" Department="" imageUrl="/images/egeMutlu.jpg" />
+                                    <TeamMemberCard name="Alara Rodoplu" role="Head of the Science" Department="" imageUrl="/members/alaraRodoplu.jpg" />
+                                    <TeamMemberCard name="Uğur Emin Baynal" role="Captain of the Software Team" Department="" imageUrl="/members/ugurEminBaynal.jpg" />
+                                    <TeamMemberCard name="Arda Demirdöğen" role="Captain of the Electronic Team" Department="" imageUrl="/members/ardaDemirdogen.jpg" />
+                                    <TeamMemberCard name="Ege Mutlu" role="Captain of the Mechanical Team" Department="" imageUrl="/members/egeMutlu.jpg" />
                                     <TeamMemberCard name="Irmak İşal" role="Head of the Finance" Department="" imageUrl="https://media.licdn.com/dms/image/v2/D4D03AQE9APTpFyiUyw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1710583941967?e=2147483647&v=beta&t=10c22P0AohC2OBuxhOrLzmNeK9jw7g1mQLbKGA1FY5g" />
                                 </div>
 

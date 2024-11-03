@@ -1,5 +1,6 @@
 import { sponsorShip } from '@/constants/SponsorshipPage';
 import Navbar from '@/components/navbar';
+import Contact from '@/components/contact';
 import Head from 'next/head';
 import Image from 'next/image';
 
@@ -16,32 +17,34 @@ export default function Home() {
         {/* Hero Section */}
         <section
           className="relative flex flex-col items-center justify-center text-center h-screen bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/galaxy-night-panoramic.jpg')" }}
+          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1673586410488-b694d350756e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fHw%3D')" }}
         >
           <Navbar />
 
           {/* Hero Content */}
-          <div className="bg-black bg-opacity-70 p-8 rounded-lg">
-            <h2 className="text-5xl font-bold text-white">Explore Mars with Our Rover</h2>
+          <div className=" p-8 rounded-lg">
+            <h2 className="font-custom text-9xl font-bold text-white">ECLIPSE</h2>
             <p className="mt-4 text-xl text-gray-300">Join our mission to uncover the mysteries of Mars.</p>
           </div>
         </section>
 
         {/* About Section */}
         <section id="about" className="py-20 bg-black">
-          <div className="container mx-auto text-center px-6 lg:px-0">
-            <h3 className="text-4xl font-semibold text-white mb-6">Who We Are</h3>
-            <p className="text-lg text-gray-300">
-              We are a passionate team dedicated to creating groundbreaking innovations in the field of space exploration.
+        <h3 className="text-4xl font-semibold mb-6">About Us</h3>
+          <div className="container mx-auto px-6 lg:px-0 flex flex-col lg:flex-row items-center lg:items-start">
+           <p className="text-lg text-gray-300 leading-relaxed">
+              As Izmir University of Economics Space and Aerospace Technologies Club (SAAT), we offer academic and technical development opportunities for students interested in aerospace engineering. We are the only representative of the European Aerospace Students' Association (EUROAVIA) in the Aegean Region. Various activities, technical trips, and projects to improve the sectoral skills of our members are strengthening.
+              <br />
+              As part of this vision, the ECO-ROVER Team European Rover Challenge (ERC) competition established and its members are carefully selected is a team of engineers. Our goal is to create space exploration vehicles that contribute to innovation and technology by designing. To ensure teamwork, to achieve great successes with teamwork is to throw it away.
             </p>
           </div>
         </section>
 
-        {/* Mission & Vision Section */}
+        {/* Mission & Vision Section 
         <section id="mission" className="py-20 bg-black">
           <div className="container mx-auto flex flex-col lg:flex-row items-center lg:items-start px-6 lg:px-12 gap-12 mt-20">
             <div className="lg:w-1/2 text-left">
-               {/* Mission Section */}
+               
                <h3 className="text-center text-4xl font-semibold text-white mb-6">Our Mission</h3>
                 <p className="text-lg text-gray-300 mb-8">
                   As ECO-ROVER, we aim to develop innovative, sustainable, and high-performance rover vehicles by supporting the development of university students in the field of science and technology. Our goal as a team is to represent our country, our university, and our supporters in the best way on international platforms while providing practical experience for future engineers.
@@ -49,57 +52,41 @@ export default function Home() {
             </div>
           
             <div className="lg:w-1/2 text-left">
-              {/* Vision Section */}
+              
               <h3 className="text-center text-4xl font-semibold text-white mb-6">Our Vision</h3>
               <p className="text-lg text-gray-300 mb-8">
                As a pioneering team in space exploration, we aim to produce sustainable solutions in international competitions with innovative technologies and make our university a recognized leader in the global scientific community. ECO-ROVER aims to inspire future space projects by supporting student entrepreneurship and teamwork.
               </p>
             </div>
           </div>
-        </section>
-
-        {/* ERC Section */}
-        <section
-          id="erc"
-          className="py-20 text-center bg-fixed bg-cover bg-center"
-          style={{
-            backgroundImage: "url('https://wkukplus.com/images/shows/mars/bg.jpeg')",
-            backgroundAttachment: "fixed"
-          }}
-        >
-          <div className="bg-black bg-opacity-70 p-8 rounded-lg">
-            <h3 className="text-4xl font-semibold text-white mb-6">What is ERC and Why We Participate</h3>
-            <p className="text-lg text-gray-300">
-              ERC (European Rover Challenge) is a prestigious robotics competition focused on space exploration. We participate to challenge ourselves, innovate, and push the boundaries of technology.
-            </p>
-          </div>
-        </section>
-
-        {/* Past Projects Section */}
-        {/*  <section id="projects" className="py-20 bg-black">
-          <div className="container mx-auto text-center px-6 lg:px-0">
-            <h3 className="text-4xl font-semibold text-white mb-6">Our Past Projects</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-black p-6 rounded-lg shadow-lg">
-                <Image src="https://picsum.photos/1920/1080" width={1920} height={1080} alt="Project 1" className="mb-4 rounded-lg mx-auto" />
-                <h4 className="text-2xl font-semibold text-white mb-2">Project 1</h4>
-                <p className="text-gray-300">Description of the project and its achievements.</p>
-              </div>
-              <div className="bg-black p-6 rounded-lg shadow-lg">
-                <Image src="https://picsum.photos/1920/1080" width={1920} height={1080} alt="Project 1" className="mb-4 rounded-lg mx-auto" />
-                <h4 className="text-2xl font-semibold text-white mb-2">Project 2</h4>
-                <p className="text-gray-300">Description of the project and its achievements.</p>
-              </div>
-              <div className="bg-black p-6 rounded-lg shadow-lg">
-                <Image src="https://picsum.photos/1920/1080" width={1920} height={1080} alt="Project 1" className="mb-4 rounded-lg mx-auto" />
-                <h4 className="text-2xl font-semibold text-white mb-2">Project 3</h4>
-                <p className="text-gray-300">Description of the project and its achievements.</p>
-              </div>
-            </div>
-          </div>
         </section> */}
 
-        {/* Current Work Section */}
+        
+
+        {/* Past Projects Section */}
+         <section id="projects" className="py-20 bg-black">
+          <div className="container mx-auto text-center px-6 lg:px-0">
+            <h3 className="text-4xl font-semibold text-white mb-6">Our Past Projects</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+              <div className="bg-black p-6 rounded-lg shadow-lg">
+                <Image src="https://picsum.photos/1920/1080" width={1920} height={1080} alt="Project 1" className="mb-4 rounded-lg mx-auto" />
+                <h4 className="text-2xl font-semibold text-white mb-2"></h4>
+                <a href="https://www.horizonrocket.com/ " className="hover:text-white transition-colors flex items-center">Horizon Rocket</a>
+                
+                <p className="text-gray-300">Description of the project and its achievements.</p>
+              </div>
+              <div className="bg-black p-6 rounded-lg shadow-lg">
+                <Image src="https://picsum.photos/1920/1080" width={1920} height={1080} alt="Project 1" className="mb-4 rounded-lg mx-auto" />
+                <h4 className="text-2xl font-semibold text-white mb-2">Eco-Wheels</h4>
+                <p className="text-gray-300">Description of the project and its achievements.</p>
+              </div>
+              
+            </div>
+          </div>
+        </section>  
+
+        {/*
+        {/* Current Work Section 
         <section id="projects" className="py-20">
           <div className="container mx-auto text-center px-6 lg:px-0">
             <h3 className="text-4xl font-semibold text-white mb-6">What We&apos;ve Done So Far</h3>
@@ -108,59 +95,47 @@ export default function Home() {
             </p>
           </div>
         </section>
+        */}
 
         {/* Current Sponsors Section */}
-        <section id="sponsors" className="py-20 bg-black">
-          <div className="container mx-auto text-center px-6 lg:px-0">
-            <h3 className="text-4xl font-semibold text-white mb-6">Our Current Sponsors</h3>
-            <p className="text-lg text-gray-300 mb-8">We are grateful for the support of our partners.</p>
-            <div className="flex flex-wrap justify-center gap-8">
-                {sponsorShip.sponsor.map((sponsor, index) => (
-                    <div key={index} className="transition-transform transform hover:scale-105 text-center">
-                        <div className="bg-white rounded-lg p-4 shadow-lg flex items-center justify-center mb-2">
-                            <Image 
-                                src={sponsor.url} 
-                                width={1920} 
-                                height={1080} 
-                                alt={sponsor.label} 
-                                className='h-36 w-96 rounded-lg' 
-                            />
-                        </div>
-                        <p className="mt-2 text-white font-semibold">{sponsor.label}</p>
-                        <div className="flex flex-col items-center mt-2 space-y-1">
-                            {sponsor.link1 && (
-                                <a href={sponsor.link1} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Website</a>
-                            )}
-                            {sponsor.link2 && (
-                                <a href={sponsor.link2} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Website 2</a>
-                            )}
-                            {sponsor.instagram && (
-                                <a href={sponsor.instagram} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Instagram</a>
-                            )}
-                        </div>
-                    </div>
-                ))}
-            </div>
+        <section id="sponsors" className="bg-black">
+          <div className="container mx-auto text-center px-6 lg:px-0 flex flex-col items-center">
+              <h3 className="text-4xl font-semibold text-white mb-6">Our Current Sponsors</h3>
+              <p className="text-lg text-gray-300 mb-8">We are grateful for the support of our partners.</p>
+              <div className="flex flex-wrap justify-center gap-8">
+                  {sponsorShip.sponsor.map((sponsor, index) => (
+                      <div key={index} className="transition-transform transform hover:scale-105 text-center">
+                          <div className="bg-white rounded-lg p-4 shadow-lg flex items-center justify-center mb-2">
+                              <Image src={sponsor.url} width={1920} height={1080} alt={sponsor.label} className='h-36 w-96 rounded-lg' />
+                          </div>
+                          <div className="flex items-center justify-center space-x-4 mt-2 mb-4">
+                              {sponsor.link1 && (
+                                  <a href={sponsor.link1} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                                      <button className="bg-orange-800 hover:bg-orange-900 text-white font-bold py-2 px-4 rounded-full transition duration-300">
+                                          {sponsor.label}
+                                      </button>
+                                  </a>
+                              )}
+                              {sponsor.instagram && (
+                                  <a href={sponsor.instagram} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                                      <svg className="h-8 w-8 text-gradient-to-r text-orange-800 " viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                          <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                                      </svg>
+                                  </a>
+                              )}
+                          </div>
+                      </div>
+                  ))}
+              </div>
           </div>
-        </section>
+      </section>
+
 
         {/* Contact Section */}
-        <section id="contact"
-          className="py-20 text-center bg-fixed bg-cover bg-center"
-          style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1673586410488-b694d350756e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fHw%3D')",
-            backgroundAttachment: "fixed"
-          }}
-        >
-          <div className="container mx-auto text-center px-6 lg:px-0">
-            <h3 className="text-4xl font-semibold text-white mb-6">Get in Touch</h3>
-            <p className="text-lg text-gray-300 mb-8">Want to learn more about our mission or join the team? Contact us below.</p>
-            <a href="mailto:ieu.ecorover@gmail.com" className="btn btn-ghost glass">Contact Us</a>
-            <p className="mt-4 text-gray-400">
-              <a href="/file/ECO-ROVERSponsorlukDosyası.pdf" className="hover:text-white">Download our sponsorship brochure</a>
-            </p>
-          </div>
-        </section>
+        <Contact />
+
       </main>
 
       <footer className="bg-black py-6">
