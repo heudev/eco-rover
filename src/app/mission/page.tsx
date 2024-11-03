@@ -3,7 +3,7 @@ import Navbar from '@/components/navbar';
 import Head from 'next/head';
 
 export default function MissionPage() {
-   
+
     return (
         <div className="min-h-screen bg-black text-gray-300">
             <Head>
@@ -32,9 +32,9 @@ export default function MissionPage() {
                     style={{ backgroundImage: "url('/images/space.jpeg')" }}
                 >
                     <div className="container bg-black bg-opacity-70 mx-auto flex flex-col lg:flex-row items-center justify-center px-6 lg:px-12 gap-12">
-                        
+
                         <div className="w-full lg:w-1/2 text-center lg:text-left p-6 flex flex-col justify-center">
-                        <h3 className="text-4xl font-semibold text-white mb-6">Our Vision</h3>
+                            <h3 className="text-4xl font-semibold text-white mb-6">Our Vision</h3>
                             <p className="text-lg text-gray-300 mb-8">
                                 As a pioneering team in space exploration, we aim to produce sustainable solutions in international competitions with innovative technologies and make our university a recognized leader in the global scientific community.
                                 <br /> ECO-ROVER aims to inspire future space projects by supporting student entrepreneurship and teamwork.

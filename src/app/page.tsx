@@ -5,7 +5,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 
 export default function Home() {
-  
+
   return (
     <div className="min-h-screen bg-black text-gray-300 scroll-smooth">
       <Head>
@@ -30,10 +30,10 @@ export default function Home() {
 
         {/* About Section */}
         <section id="about" className="py-20 bg-black">
-        <h3 className="text-4xl font-semibold mb-6">About Us</h3>
+          <h3 className="text-4xl font-semibold mb-6 text-center">About Us</h3>
           <div className="container mx-auto px-6 lg:px-0 flex flex-col lg:flex-row items-center lg:items-start">
-           <p className="text-lg text-gray-300 leading-relaxed">
-              As Izmir University of Economics Space and Aerospace Technologies Club (SAAT), we offer academic and technical development opportunities for students interested in aerospace engineering. We are the only representative of the European Aerospace Students' Association (EUROAVIA) in the Aegean Region. Various activities, technical trips, and projects to improve the sectoral skills of our members are strengthening.
+            <p className="text-lg text-gray-300 leading-relaxed">
+              As Izmir University of Economics Space and Aerospace Technologies Club (SAAT), we offer academic and technical development opportunities for students interested in aerospace engineering. We are the only representative of the European Aerospace Students&apos; Association (EUROAVIA) in the Aegean Region. Various activities, technical trips, and projects to improve the sectoral skills of our members are strengthening.
               <br />
               As part of this vision, the ECO-ROVER Team European Rover Challenge (ERC) competition established and its members are carefully selected is a team of engineers. Our goal is to create space exploration vehicles that contribute to innovation and technology by designing. To ensure teamwork, to achieve great successes with teamwork is to throw it away.
             </p>
@@ -61,29 +61,28 @@ export default function Home() {
           </div>
         </section> */}
 
-        
+
 
         {/* Past Projects Section */}
-         <section id="projects" className="py-20 bg-black">
+        <section id="projects" className="py-20 bg-black">
           <div className="container mx-auto text-center px-6 lg:px-0">
             <h3 className="text-4xl font-semibold text-white mb-6">Our Past Projects</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
               <div className="bg-black p-6 rounded-lg shadow-lg">
-                <Image src="https://picsum.photos/1920/1080" width={1920} height={1080} alt="Project 1" className="mb-4 rounded-lg mx-auto" />
+                <Image src="/images/horizon.png" width={1920} height={1080} alt="Project 1" className="mb-4 rounded-lg mx-auto" />
                 <h4 className="text-2xl font-semibold text-white mb-2"></h4>
-                <a href="https://www.horizonrocket.com/ " className="hover:text-white transition-colors flex items-center">Horizon Rocket</a>
-                
-                <p className="text-gray-300">Description of the project and its achievements.</p>
+                <a href="https://horizonrocket.com " className="hover:text-white transition-colors text-center text-2xl font-bold">Horizon Rocket</a>
+                <p className="text-gray-300">İzmir University of Economics Rocket Team</p>
               </div>
               <div className="bg-black p-6 rounded-lg shadow-lg">
-                <Image src="https://picsum.photos/1920/1080" width={1920} height={1080} alt="Project 1" className="mb-4 rounded-lg mx-auto" />
-                <h4 className="text-2xl font-semibold text-white mb-2">Eco-Wheels</h4>
-                <p className="text-gray-300">Description of the project and its achievements.</p>
+                <Image src="/images/ecowheels.png" width={1920} height={1080} alt="Project 1" className="mb-4 rounded-lg mx-auto" />
+                <a href="https://ecowheels.ieu.app" className="hover:text-white transition-colors text-center text-2xl font-bold">EcoWheels</a>
+                <p className="text-gray-300">İzmir University of Economics Electric Vehicle Development Team</p>
               </div>
-              
+
             </div>
           </div>
-        </section>  
+        </section>
 
         {/*
         {/* Current Work Section 
@@ -100,37 +99,37 @@ export default function Home() {
         {/* Current Sponsors Section */}
         <section id="sponsors" className="bg-black">
           <div className="container mx-auto text-center px-6 lg:px-0 flex flex-col items-center">
-              <h3 className="text-4xl font-semibold text-white mb-6">Our Current Sponsors</h3>
-              <p className="text-lg text-gray-300 mb-8">We are grateful for the support of our partners.</p>
-              <div className="flex flex-wrap justify-center gap-8">
-                  {sponsorShip.sponsor.map((sponsor, index) => (
-                      <div key={index} className="transition-transform transform hover:scale-105 text-center">
-                          <div className="bg-white rounded-lg p-4 shadow-lg flex items-center justify-center mb-2">
-                              <Image src={sponsor.url} width={1920} height={1080} alt={sponsor.label} className='h-36 w-96 rounded-lg' />
-                          </div>
-                          <div className="flex items-center justify-center space-x-4 mt-2 mb-4">
-                              {sponsor.link1 && (
-                                  <a href={sponsor.link1} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
-                                      <button className="bg-orange-800 hover:bg-orange-900 text-white font-bold py-2 px-4 rounded-full transition duration-300">
-                                          {sponsor.label}
-                                      </button>
-                                  </a>
-                              )}
-                              {sponsor.instagram && (
-                                  <a href={sponsor.instagram} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
-                                      <svg className="h-8 w-8 text-gradient-to-r text-orange-800 " viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                          <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                                          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                                          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                                      </svg>
-                                  </a>
-                              )}
-                          </div>
-                      </div>
-                  ))}
-              </div>
+            <h3 className="text-4xl font-semibold text-white mb-6">Our Current Sponsors</h3>
+            <p className="text-lg text-gray-300 mb-8">We are grateful for the support of our partners.</p>
+            <div className="flex flex-wrap justify-center gap-8">
+              {sponsorShip.sponsor.map((sponsor, index) => (
+                <div key={index} className="transition-transform transform hover:scale-105 text-center">
+                  <div className="bg-white rounded-lg p-4 shadow-lg flex items-center justify-center mb-2">
+                    <Image src={sponsor.url} width={1920} height={1080} alt={sponsor.label} className='h-36 w-96 rounded-lg' />
+                  </div>
+                  <div className="flex items-center justify-center space-x-4 mt-2 mb-4">
+                    {sponsor.link1 && (
+                      <a href={sponsor.link1} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                        <button className="bg-orange-800 hover:bg-orange-900 text-white font-bold py-2 px-4 rounded-full transition duration-300">
+                          {sponsor.label}
+                        </button>
+                      </a>
+                    )}
+                    {sponsor.instagram && (
+                      <a href={sponsor.instagram} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                        <svg className="h-8 w-8 text-gradient-to-r text-orange-800 " viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                          <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                        </svg>
+                      </a>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
-      </section>
+        </section>
 
 
         {/* Contact Section */}
