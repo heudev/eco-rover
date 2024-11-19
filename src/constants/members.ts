@@ -14,7 +14,7 @@ const teamData: Record<string, { name: string; role: string; department: string;
         { name: "Sezen Çetinkaya", role: "Website and Interface", department: "Computer Engineering", imageUrl: "/members/sezenCetinkaya.jpg" , lnLink: "https://www.linkedin.com/in/sezencetinkaya/"},
         { name: "İsmail Tarım", role: "ROS and Inverse Kinematics", department: "Computer Engineering", imageUrl: "/members/ismailTarım.jpg" , lnLink: "https://www.linkedin.com/in/ismailtarim/"},
         { name: "Berat Bora Altaş", role: "ROS", department: "Computer Engineering", imageUrl: "/members/beratBoraAltas.jpg" , lnLink: "https://www.linkedin.com/in/berat-bora-alta%C5%9F-079180277"},
-        { name: "İdil Buse Zengin", role: "Communication", department: "Computer Engineering", imageUrl: "/members/idilBuseZengin.jpg" , lnLink: "http://linkedin.com/in/idil-buse-zengin-65687331a" },
+        { name: "İdil Buse Zengin", role: "Communication", department: "Computer Engineering", imageUrl: "/members/idilBuseZengin.jpg" , lnLink: "https://www.linkedin.com/in/idil-buse-zengin-65687331a" },
         { name: "Aras Fırat", role: "Communication", department: "Computer Engineering", imageUrl: "/members/arasFırat.jpg" , lnLink: "https://www.linkedin.com/in/aras-firat/" },
         { name: "Mehmet Akın Savşçı", role: "", department: "Computer Engineering", imageUrl: "/members/mehmetAkınSavacı.jpg" , lnLink: "https://www.linkedin.com/in/mehmet-ak%C4%B1n-sava%C5%9F%C3%A7%C4%B1-571472246/"},
         { name: "Muhammet Polatlı", role: "Communication", department: "Electrical - Electronics Engineering", imageUrl: "/images/logo.png" , lnLink: "https://www.linkedin.com/in/muhammet-polatl%C4%B1-7719352b7/"},
