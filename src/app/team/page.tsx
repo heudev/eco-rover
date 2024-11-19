@@ -69,8 +69,8 @@ export default function TeamPage() {
                             <div className="flex flex-wrap justify-center items-center w-full mb-16">
 
                                 <div className="flex flex-wrap flex-col lg:flex-row items-center gap-24 mx-auto p-4">
-                                    <TeamMemberCard name="Pınar Oğuz Ekim" role="Advisor" Department="" imageUrl="https://odin-oasis.izmirekonomi.edu.tr/images/photos/32462caecc122eb133c171e61f69dca9bd08d662.jpg" />
-                                    <TeamMemberCard name="Şeniz Ertuğrul" role="Advisor" Department="" imageUrl="/members/senizErtugrul.png" />
+                                    <TeamMemberCard name="Pınar Oğuz Ekim" role="Advisor" department="Associate Professor at IUE Electrical - Electronics Engineering" imageUrl="https://odin-oasis.izmirekonomi.edu.tr/images/photos/32462caecc122eb133c171e61f69dca9bd08d662.jpg" lnLink= "https://www.linkedin.com/in/pinar-oguz-ekim-2b475543/"/>
+                                    <TeamMemberCard name="Şeniz Ertuğrul" role="Advisor" department="Professor at IUE Mechatronics Engineering Department" imageUrl="/members/senizErtugrul.png" lnLink= "https://www.linkedin.com/in/%C5%9Feniz-ertu%C4%9Frul-9a19a510b/"/>
                                 </div>
 
                             </div>
@@ -83,8 +83,8 @@ export default function TeamPage() {
                             <div className="flex flex-wrap justify-center items-center w-full mb-16">
 
                                 <div className="flex flex-col lg:flex-row items-center gap-24 mx-auto p-4">
-                                    <TeamMemberCard name="Burakcan Akçit" role="Lead" Department="" imageUrl="/members/burakcanAkcit.jpg" />
-                                    <TeamMemberCard name="Berkay Bağcı" role="Lead" Department="" imageUrl="/members/berkayBagcı.jpg" />
+                                    <TeamMemberCard name="Burakcan Akçit" role="Lead" department="Aerospace Engineering and Mechanical Engineering" imageUrl="/members/burakcanAkcit.jpg" lnLink= "https://www.linkedin.com/in/burakcan-akcit-2727a0223/"/>
+                                    <TeamMemberCard name="Berkay Bağcı" role="Lead" department="Mechanical Engineering" imageUrl="/members/berkayBagcı.jpg" lnLink= "https://www.linkedin.com/in/berkay-ba%C4%9Fc%C4%B1-073803164/"/>
                                 </div>
 
                             </div>
@@ -96,12 +96,13 @@ export default function TeamPage() {
                             <h3 className="text-4xl font-semibold text-white mb-8">CAPTAINS</h3>
                             <div className="flex flex-wrap justify-center items-center w-full mb-16">
 
-                                <div className="flex flex-wrap justify-center flex-col lg:flex-row items-center gap-16 mx-auto p-4">
-                                    <TeamMemberCard name="Alara Rodoplu" role="Head of the Science" Department="" imageUrl="/members/alaraRodoplu.jpg" />
-                                    <TeamMemberCard name="Uğur Emin Baynal" role="Captain of the Software Team" Department="" imageUrl="/members/ugurEminBaynal.jpg" />
-                                    <TeamMemberCard name="Arda Demirdöğen" role="Captain of the Electronic Team" Department="" imageUrl="/members/ardaDemirdogen.jpg" />
-                                    <TeamMemberCard name="Ege Mutlu" role="Captain of the Mechanical Team" Department="" imageUrl="/members/egeMutlu.jpg" />
-                                    <TeamMemberCard name="Irmak İşal" role="Head of the Finance" Department="" imageUrl="https://media.licdn.com/dms/image/v2/D4D03AQE9APTpFyiUyw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1710583941967?e=2147483647&v=beta&t=10c22P0AohC2OBuxhOrLzmNeK9jw7g1mQLbKGA1FY5g" />
+                                <div className="flex flex-wrap justify-center flex-col lg:flex-row items-center gap-24 mx-auto p-4">
+                                    <TeamMemberCard name="Uğur Emin Baynal" role="Captain of the Software Team" department="Electrical - Electronics Engineering / Computer Engineering" imageUrl="/members/ugurEminBaynal.jpg" lnLink= "https://www.linkedin.com/in/ugur-emin-baynal-1b74781b2/?locale=en_US" />
+                                    <TeamMemberCard name= "Metehan Şaba" role= "Captain of the Software Team" department= "Electrical - Electronics Engineering" imageUrl= "/members/metehanSaba.jpg" lnLink= "https://www.linkedin.com/in/metehan-%C5%9Faba/" />
+                                    <TeamMemberCard name="Arda Demirdöğen" role="Captain of the Electronic Team" department="Electrical - Electronics Engineering" imageUrl="/members/ardaDemirdogen.jpg" lnLink= "https://www.linkedin.com/in/arda-demird%C3%B6%C4%9Fen-72b237240/" />
+                                    <TeamMemberCard name="Ege Mutlu" role="Captain of the Mechanical Team" department="Aerospace Engineering" imageUrl="/members/egeMutlu.jpg" lnLink= "https://www.linkedin.com/in/ege-mutlu-671917284" />
+                                    <TeamMemberCard name="Alara Rodoplu" role="Head of the Science" department="Medicine" imageUrl="/members/alaraRodoplu.jpg" lnLink= "https://www.linkedin.com/in/alara-rodoplu-196923245/"/>
+                                    <TeamMemberCard name="Irmak İşal" role="Head of the Finance" department="English Translation and Interpreting, and International Trade and Finance " imageUrl="https://media.licdn.com/dms/image/v2/D4D03AQE9APTpFyiUyw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1710583941967?e=2147483647&v=beta&t=10c22P0AohC2OBuxhOrLzmNeK9jw7g1mQLbKGA1FY5g" lnLink= "" />
                                 </div>
 
                             </div>

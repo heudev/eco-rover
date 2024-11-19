@@ -5,11 +5,12 @@ import { teamData } from '@/constants/members';
 interface TeamProps {
     name: string;
     role: string;
-    Department: string;
+    department: string;
     imageUrl: string;
+    lnLink : string;
 }
 
-export function Team({ name, Department, imageUrl }: TeamProps) {
+export function Team({ name,role, department, imageUrl, lnLink }: TeamProps) {
     return (
         <div className="flex justify-center items-center perspective">
 
@@ -27,12 +28,12 @@ export function Team({ name, Department, imageUrl }: TeamProps) {
 
                 {/*Hidden by default*/}
                 <div className="absolute w-full h-full flex flex-col items-center justify-center rounded-full shadow-lg backface-hidden opacity-0 transition-opacity duration-300 group-hover:opacity-100 bg-black bg-opacity-50 backdrop-blur-md">
-                    <p className="text-white">{Department}</p>
-                    <p className="text-white">contact</p>
-                </div>
+                    <p className="text-white">{department}</p>
+                 </div>
 
                 <div className="absolute top-[250px] left-0 w-full flex flex-col items-center justify-center">
                     <p className="text-white text-lg font-bold">{name}</p>
+                    <p className="text-white">{role}</p>
                 </div>
 
                 {/* glow effect*/}
@@ -89,10 +90,10 @@ export function Menu() {
 
             {/* Aktif takımın üyelerini göster */}
             <div className={`flex flex-col items-center transition-all duration-500 ${activeTeam ? 'opacity-100' : 'opacity-0 h-0 overflow-hidden'} mx-auto max-w-screen-lg`}>
-            <div className={`grid gap-24 ${ activeTeam === 'Science' || activeTeam === 'HumanResourceFinance' ? 'grid-cols-1' : activeTeam === 'Mechanics' ? 'grid-cols-1 lg:grid-cols-2':activeTeam === 'Electronics' ? 'grid-cols-1 lg:grid-cols-3': 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-4' }`}>
+            <div className={`grid gap-32 ${ activeTeam === 'HumanResourceFinance' ? 'grid-cols-1' : activeTeam === 'Science' || activeTeam === 'Mechanics' ? 'grid-cols-1 lg:grid-cols-2':activeTeam === 'Electronics' ? 'grid-cols-1 lg:grid-cols-3': 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-4' }`}>
                     {activeTeam && teamData[activeTeam]?.map((member, index) => (
                         <div className="flex justify-center items-center" key={index}>
-                            <Team name={member.name} role={member.role} Department={member.Department} imageUrl={member.imageUrl} />
+                            <Team name={member.name} role={member.role} department={member.department} imageUrl={member.imageUrl} lnLink={member.lnLink}/>
                         </div>
                     ))}
                 </div>
