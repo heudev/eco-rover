@@ -7,10 +7,10 @@ interface TeamProps {
     role: string;
     department: string;
     imageUrl: string;
-    lnLink : string;
+    lnLink: string;
 }
 
-export function Team({ name,role, department, imageUrl, lnLink }: TeamProps) {
+export function Team({ name, role, department, imageUrl }: TeamProps) {
     return (
         <div className="flex justify-center items-center perspective">
 
@@ -29,7 +29,7 @@ export function Team({ name,role, department, imageUrl, lnLink }: TeamProps) {
                 {/*Hidden by default*/}
                 <div className="absolute w-full h-full flex flex-col items-center justify-center rounded-full shadow-lg backface-hidden opacity-0 transition-opacity duration-300 group-hover:opacity-100 bg-black bg-opacity-50 backdrop-blur-md">
                     <p className="text-white">{department}</p>
-                 </div>
+                </div>
 
                 <div className="absolute top-[250px] left-0 w-full flex flex-col items-center justify-center">
                     <p className="text-white text-lg font-bold">{name}</p>
@@ -82,7 +82,7 @@ export function Menu() {
                 </li>
                 <li>
                     <button onClick={() => setActiveTeam(activeTeam === "HumanResourceFinance" ? null : "HumanResourceFinance")} className="w-64 flex flex-row items-center justify-center ml-2 text-white  bg-orange-800 hover:bg-orange-900 focus:outline-none focus:ring-2 focus:ring-orange-800 focus:text-white">
-                        <svg className="h-8 w-8 text-white"  fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                        <svg className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
                         <span>Human Resources & Finance</span>
                     </button>
                 </li>
@@ -90,10 +90,10 @@ export function Menu() {
 
             {/* Aktif takımın üyelerini göster */}
             <div className={`flex flex-col items-center transition-all duration-500 ${activeTeam ? 'opacity-100' : 'opacity-0 h-0 overflow-hidden'} mx-auto max-w-screen-lg`}>
-            <div className={`grid gap-32 ${ activeTeam === 'HumanResourceFinance' ? 'grid-cols-1' : activeTeam === 'Science' || activeTeam === 'Mechanics' ? 'grid-cols-1 lg:grid-cols-2':activeTeam === 'Electronics' ? 'grid-cols-1 lg:grid-cols-3': 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-4' }`}>
+                <div className={`grid gap-32 ${activeTeam === 'HumanResourceFinance' ? 'grid-cols-1' : activeTeam === 'Science' || activeTeam === 'Mechanics' ? 'grid-cols-1 lg:grid-cols-2' : activeTeam === 'Electronics' ? 'grid-cols-1 lg:grid-cols-3' : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-4'}`}>
                     {activeTeam && teamData[activeTeam]?.map((member, index) => (
                         <div className="flex justify-center items-center" key={index}>
-                            <Team name={member.name} role={member.role} department={member.department} imageUrl={member.imageUrl} lnLink={member.lnLink}/>
+                            <Team name={member.name} role={member.role} department={member.department} imageUrl={member.imageUrl} lnLink={member.lnLink} />
                         </div>
                     ))}
                 </div>
