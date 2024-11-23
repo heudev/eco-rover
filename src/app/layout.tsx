@@ -20,6 +20,13 @@ const brunoAceSC = localFont({
   style: "normal",
 });
 
+const notoSans = localFont({
+  src: "./fonts/NotoSansDisplay.ttf",
+  variable: "--font-noto-sans",
+  weight: "400",
+  style: "normal",
+});
+
 export const metadata: Metadata = {
   title: "Ecorover",
   description: "Ecorover",
@@ -34,7 +41,7 @@ export default function RootLayout({
     <html lang="en">
       <link rel="icon" href="/images/logo.png" type="image/png" sizes="32x32" />
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${brunoAceSC.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${brunoAceSC.variable} ${notoSans.variable} antialiased`}
       >
         {children}
       </body>

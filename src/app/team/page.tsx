@@ -29,7 +29,7 @@ export default function TeamPage() {
                 {/* Hero Content */}
                 <div className="hero bg-base-200 bg-opacity-0 min-h-screen flex items-center justify-center">
                     <div className="flex flex-col items-center">
-                        <h1 className="text-5xl font-bold mb-4 text-center">Meet the Stars Behind the Mission!</h1>
+                        <h1 className="title-font text-5xl font-bold mb-4 text-center">Meet the Stars Behind the Mission!</h1>
                         <p className="text-lg leading-relaxed text-center">
                             Eclipse, our Eco Rover creation, blends sustainability with exploration.
                             <br />Designed to illuminate the unknown, it navigates where light and shadow meet!
@@ -64,7 +64,7 @@ export default function TeamPage() {
 
                         <div className="flex flex-col items-center justify-center">
 
-                            <h3 className="text-4xl font-semibold text-white mb-8">ADVISORS</h3>
+                            <h3 className="title-font text-4xl font-semibold text-white mb-8">ADVISORS</h3>
 
                             <div className="flex flex-wrap justify-center items-center w-full mb-16">
 
@@ -78,7 +78,7 @@ export default function TeamPage() {
 
                         <div className="flex flex-col items-center justify-center">
 
-                            <h3 className="text-4xl font-semibold text-white mb-8">LEADERS</h3>
+                            <h3 className="title-font text-4xl font-semibold text-white mb-8">LEADERS</h3>
 
                             <div className="flex flex-wrap justify-center items-center w-full mb-16">
 
@@ -93,7 +93,7 @@ export default function TeamPage() {
 
                         <div className="flex flex-col items-center justify-center">
 
-                            <h3 className="text-4xl font-semibold text-white mb-8">CAPTAINS</h3>
+                            <h3 className="title-font text-4xl font-semibold text-white mb-8">CAPTAINS</h3>
                             <div className="flex flex-wrap justify-center items-center w-full mb-16">
 
                                 <div className="flex flex-wrap justify-center flex-col lg:flex-row items-center gap-24 mx-auto p-4">

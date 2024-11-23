@@ -17,7 +17,11 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--font-bruno-ace-sc), sans-serif;
+  font-family: var(--font-noto-sans), sans-serif;
+}
+
+.title-font {
+  font-family: var(--font-bruno-ace-sc);
 }
 
 @layer utilities {

@@ -11,7 +11,7 @@ export default function Navbar() {
             
             <div className="w-full lg:w-1/2 text-center lg:text-left p-6 flex flex-col justify-center">
               <div className="flex flex-col items-center text-lg text-gray-300 mt-8">
-                <h3 className="text-3xl font-semibold text-white mb-6 ">Follow us on social media</h3>
+                <h3 className="title-font text-3xl font-semibold text-white mb-6 ">Follow us on social media</h3>
                 <p className="text-lg text-gray-300 mb-8 flex text-center justify-center"> Follow us on our social media accounts for the latest news about Eco-Rover.</p> 
 
                 <div className="flex space-x-4 mb-8">
@@ -20,13 +20,13 @@ export default function Navbar() {
                   <a href="https://www.instagram.com/ieu_eco_rover" className="hover:text-white transition-colors"><svg className="h-8 w-8 text-gradient-to-r  text-orange-500"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth="2"  strokeLinecap="round"  strokeLinejoin="round">  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg></a>
                 </div>
                 
-                <h3 className="text-3xl font-semibold flex text-center justify-center text-white mb-6">Building the Future Together</h3>
+                <h3 className="title-font text-3xl font-semibold flex text-center justify-center text-white mb-6">Building the Future Together</h3>
                 <a href="/file/ECO-ROVERSponsorlukDosyası.pdf" className="hover:text-white flex text-center justify-center">Click to download our sponsorship brochure, which outlines the opportunities for collaboration and support for Eco-Rover.</a>
               </div>
             </div>
 
             <div className="w-full lg:w-1/2 text-left p-6 flex flex-col justify-center items-center">
-              <h3 className="flex text-center justify-center text-3xl font-semibold text-white mb-6">Get in touch with us</h3>
+              <h3 className="title-font flex text-center justify-center text-3xl font-semibold text-white mb-6">Get in touch with us</h3>
               
               <div className="flex flex-col lg:flex-row items-start justify-start gap-8 px-6 lg:px-12"> 
 
@@ -76,7 +76,7 @@ export default function Navbar() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
-                  <p>Izmir Univercity of Economics</p>
+                  <p>Izmir University of Economics</p>
                 </div>
                 <p className="text-center">Fevzi Çakmak, Sakarya Cd. No:156, 35330 Balçova/Izmir/Türkiye</p> 
               </div>

@@ -16,7 +16,7 @@ export default function Navbar() {
                         className='rounded-full w-20 h-20 md:h-32 md:w-32 mx-auto'
                     />
                 </div>
-                <div className="navbar bg-opacity-0 flex justify-end">
+                <div className="title-font navbar bg-opacity-0 flex justify-end">
 
                     {/* Hamburger Menu for Mobile */}
                     <div className="dropdown dropdown-end md:hidden">

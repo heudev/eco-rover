@@ -22,7 +22,7 @@ export default function Home() {
           <Navbar />
 
           {/* Hero Content */}
-          <div className=" p-8 rounded-lg">
+          <div className="title-font p-8 rounded-lg">
             <h2 className="font-custom text-9xl font-bold text-white">ECLIPSE</h2>
             <p className="mt-4 text-xl text-gray-300">Join our mission to uncover the mysteries of Mars.</p>
           </div>
@@ -30,7 +30,7 @@ export default function Home() {
 
         {/* About Section */}
         <section id="about" className="py-20 bg-black">
-          <h3 className="text-4xl font-semibold mb-6 text-center">About Us</h3>
+          <h3 className="title-font text-4xl font-semibold mb-6 text-center">About Us</h3>
           <div className="container mx-auto px-6 lg:px-0 flex flex-col lg:flex-row items-center lg:items-start">
             <p className="text-lg text-gray-300 leading-relaxed">
               As Izmir University of Economics Space and Aerospace Technologies Club (SAAT), we offer academic and technical development opportunities for students interested in aerospace engineering. We are the only representative of the European Aerospace Students&apos; Association (EUROAVIA) in the Aegean Region. Various activities, technical trips, and projects to improve the sectoral skills of our members are strengthening.
@@ -66,7 +66,7 @@ export default function Home() {
         {/* Past Projects Section */}
         <section id="projects" className="py-20 bg-black">
           <div className="container mx-auto text-center px-6 lg:px-0">
-            <h3 className="text-4xl font-semibold text-white mb-6">Our Past Projects</h3>
+            <h3 className="title-font text-4xl font-semibold text-white mb-6">Our Past Projects</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
               <div className="bg-black p-6 rounded-lg shadow-lg">
                 <Image src="/images/horizon.png" width={1920} height={1080} alt="Project 1" className="mb-4 rounded-lg mx-auto" />
@@ -98,33 +98,72 @@ export default function Home() {
 
         {/* Current Sponsors Section */}
         <section id="sponsors" className="bg-black">
-          <div className="container mx-auto text-center px-6 lg:px-0 flex flex-col items-center">
-            <h3 className="text-4xl font-semibold text-white mb-6">Our Current Sponsors</h3>
+          <div className="container mx-auto text-center px-6 lg:px-16 flex flex-col items-center">
+            <h3 className="title-font text-4xl font-semibold text-white mb-6">Our Current Sponsors</h3>
             <p className="text-lg text-gray-300 mb-8">We are grateful for the support of our partners.</p>
-            <div className="flex flex-wrap justify-center gap-8">
-              {sponsorShip.sponsor.map((sponsor, index) => (
-                <div key={index} className="transition-transform transform hover:scale-105 text-center">
-                  <div className="bg-white rounded-lg p-4 shadow-lg flex items-center justify-center mb-2">
-                    <Image src={sponsor.url} width={1920} height={1080} alt={sponsor.label} className='h-36 w-96 rounded-lg' />
+
+            {/* Catogory */}
+            <div className="flex justify-between gap-8">
+              {Object.keys(sponsorShip).map((category) => (
+                <div key={category} className="w-1/3">
+                  <div className="flex justify-center mb-6">
+                    <Image
+                      src={`/sponsorship/${category}.svg`}
+                      alt={category}
+                      className="h-32 md:h-40 lg:h-48 rounded-lg object-contain"
+                      width={3780}
+                      height={1080}
+                    />
                   </div>
-                  <div className="flex items-center justify-center space-x-4 mt-2 mb-4">
-                    {sponsor.link1 && (
-                      <a href={sponsor.link1} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
-                        <button className="bg-orange-800 hover:bg-orange-900 text-white font-bold py-2 px-4 rounded-full transition duration-300">
-                          {sponsor.label}
-                        </button>
-                      </a>
-                    )}
-                    {sponsor.instagram && (
-                      <a href={sponsor.instagram} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
-                        <svg className="h-8 w-8 text-gradient-to-r text-orange-800 " viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                          <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                        </svg>
-                      </a>
-                    )}
-                  </div>
+                  {sponsorShip[category].map((sponsor, index) => (
+                    <div key={index} className="transition-transform transform hover:scale-105 text-center mb-4">
+                      <div className="bg-white rounded-lg p-4 shadow-lg flex items-center justify-center mb-2">
+                        <Image
+                          src={sponsor.url}
+                          width={1920}
+                          height={1080}
+                          alt={sponsor.label}
+                          className="h-36 w-96 rounded-lg"
+                        />
+                      </div>
+                      <div className="flex items-center justify-center space-x-4 mt-2 mb-4">
+                        {sponsor.link1 && (
+                          <a
+                            href={sponsor.link1}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-400 hover:text-white transition-colors"
+                          >
+                            <button className="bg-orange-800 hover:bg-orange-900 text-white font-bold py-2 px-4 rounded-full transition duration-300">
+                              {sponsor.label}
+                            </button>
+                          </a>
+                        )}
+                        {sponsor.instagram && (
+                          <a
+                            href={sponsor.instagram}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-400 hover:text-white transition-colors"
+                          >
+                            <svg
+                              className="h-8 w-8 text-gradient-to-r text-orange-800"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg>
+                          </a>
+                        )}
+                      </div>
+                    </div>
+                  ))}
                 </div>
               ))}
             </div>
