@@ -1,0 +1,24 @@
+{
+    "home": {
+        "missionMars": "Join our mission to uncover the mysteries of Mars."
+    },
+    "erc": {
+        "whatIsERC": "What is ERC and Why We Participate"
+    },
+    "mission": {
+        "missionAndVision": "Check It out our Mission & Vision"
+    },
+    "sponsorship": {
+        "currentSponsors": "Our Current Sponsors"
+    },
+    "team": {
+        "missionTeamTitle": "Meet the Stars Behind the Mission!"
+    },
+    "navbar": {
+        "about": "About",
+        "visionAndMission": "Vision & Mission",
+        "contact": "Contact",
+        "sponsorship": "Sponsorship",
+        "team": "Team"
+    }
+}

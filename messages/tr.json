@@ -1,0 +1,24 @@
+{
+    "home": {
+        "missionMars": "Mars'ın gizemlerini keşfetmek için görevimize katılın."
+    },
+    "erc": {
+        "whatIsERC": "ERC nedir ve neden katılıyoruz?"
+    },
+    "mission": {
+        "missionAndVision": "Misyon ve Vizyonumuzu Keşfedin"
+    },
+    "sponsorship": {
+        "currentSponsors": "Mevcut Sponsorlarımız"
+    },
+    "team": {
+        "missionTeamTitle": "Görevimizin Arkasındaki Yıldızlarla Tanışın!"
+    },
+    "navbar": {
+        "about": "Hakkımızda",
+        "visionAndMission": "Vizyon & Misyon",
+        "contact": "İletişim",
+        "sponsorship": "Sponsorluk",
+        "team": "Takım"
+    }
+}
