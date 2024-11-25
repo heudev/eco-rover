@@ -26,7 +26,7 @@ export default function Home() {
 
           {/* Hero Content */}
           <div className="title-font p-8 rounded-lg">
-            <h2 className="font-custom text-9xl font-bold text-white">ECLIPSE</h2>
+            <h2 className="font-custom text-5xl xl:text-9xl font-bold text-white">ECLIPSE</h2>
             <p className="mt-4 text-xl text-gray-300">{t('missionMars')}</p>
           </div>
         </section>
@@ -106,9 +106,9 @@ export default function Home() {
             <p className="text-lg text-gray-300 mb-8">We are grateful for the support of our partners.</p>
 
             {/* Catogory */}
-            <div className="flex justify-between gap-8">
+            <div className="md:flex justify-between gap-8">
               {Object.keys(sponsorShip).map((category) => (
-                <div key={category} className="w-1/3">
+                <div key={category} className="md:w-1/3">
                   <div className="flex justify-center mb-6">
                     <Image
                       src={`/sponsorship/${category}.svg`}

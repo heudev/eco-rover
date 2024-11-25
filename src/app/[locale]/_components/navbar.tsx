@@ -1,9 +1,12 @@
 import Image from 'next/image';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 
 export default function Navbar() {
     const t = useTranslations('navbar');
+    const locale = useLocale();
+    const otherLocale = locale === 'en' ? 'tr' : 'en';
+
     return (
         // NavBar
         <header className="absolute top-0 left-0 w-full bg-black bg-opacity-50 p-4">
@@ -20,7 +23,12 @@ export default function Navbar() {
                 <div className="title-font navbar bg-opacity-0 flex justify-end">
 
                     {/* Hamburger Menu for Mobile */}
-                    <div className="dropdown dropdown-end md:hidden">
+                    <div className="dropdown dropdown-end md:hidden flex gap-5">
+                        <div className='bg-white text-black rounded p-1'>
+                            <a href={"/" + otherLocale}>
+                                {otherLocale.toUpperCase()}
+                            </a>
+                        </div>
                         <label tabIndex={0} className="btn btn-square btn-ghost text-white">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path>
@@ -34,12 +42,13 @@ export default function Navbar() {
                             <li><Link href="/#contact">{t('contact')}</Link></li>
                             <li><Link href="/sponsorship">{t('sponsorship')}</Link></li>
                             <li><Link href="/team">{t('team')}</Link></li>
+
                         </ul>
                     </div>
 
                     {/* Full Menu for Larger Screens */}
                     <nav className="hidden md:flex">
-                        <ul className="flex space-x-6 text-gray-400">
+                        <ul className="flex items-center space-x-6 text-gray-400">
                             <li><Link href="/#about" className="hover:text-white">{t('about')}</Link></li>
                             <li><Link href="/mission" className="hover:text-white">{t('visionAndMission')}</Link></li>
                             <li><Link href="/erc" className="hover:text-white">ERC</Link></li>
@@ -47,6 +56,11 @@ export default function Navbar() {
                             <li><Link href="/#contact" className="hover:text-white">{t('contact')}</Link></li>
                             <li><Link href="/sponsorship" className="hover:text-white">{t('sponsorship')}</Link></li>
                             <li><Link href="/team" className="hover:text-white">{t('team')}</Link></li>
+                            <li className='bg-white text-black rounded p-1'>
+                                <a href={"/" + otherLocale}>
+                                    {otherLocale.toUpperCase()}
+                                </a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
