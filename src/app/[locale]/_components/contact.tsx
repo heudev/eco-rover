@@ -24,7 +24,7 @@ export default function Contact() {
               <a href="https://www.instagram.com/ieu_eco_rover" className="hover:text-white transition-colors"><svg className="h-8 w-8 text-gradient-to-r  text-orange-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg></a>
             </div>
 
-            <h3 className="title-font text-3xl font-semibold flex text-center justify-center text-white mb-6"></h3>
+            <h3 className="title-font text-3xl font-semibold flex text-center justify-center text-white mb-6">{t('BuildFuture')}</h3>
             <a href="/file/ECO - ROVERSponsorlukDosyası.pdf" className="hover:text-white flex text-center justify-center">{t('click')}</a>
           </div>
         </div>

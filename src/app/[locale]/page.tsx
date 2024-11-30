@@ -180,7 +180,7 @@ export default function Home() {
 
       <footer className="bg-black py-6">
         <div className="container mx-auto text-center text-gray-400">
-          <p>&copy; {t('missionMars')}</p>
+          <p>&copy; {g('footer')}</p>
         </div>
       </footer>
     </div>
