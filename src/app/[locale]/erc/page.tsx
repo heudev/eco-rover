@@ -4,6 +4,7 @@ import Head from 'next/head';
 import { useTranslations } from 'next-intl';
 
 export default function ERCPage() {
+    const g = useTranslations('general');
     const t = useTranslations('erc');
 
     return (
@@ -35,11 +36,11 @@ export default function ERCPage() {
                     <div className="bg-black bg-opacity-70 p-8 rounded-lg">
                         <h3 className="title-font text-4xl font-semibold text-white mb-6">{t('whatIsERC')}</h3>
                         <p className="text-lg text-gray-300 text-justify">
-                            The European Rover Challenge (ERC) is the world&apos;s premier space exploration vehicle (ROVER) competition. The competition included 69 different participants from 23 different countries. Our university team is participating and challenging Mars-like space exploration vehicles capable of performing missions by designing and producing both technical skills and exhibiting their innovation skills.
-                            <br /> As the Space and Aviation Technologies Club, we have developed engineering skills, gained experience in our work, and are ready to compete internationally. We have selected candidates to represent our country and our supporters in the best possible way to participate in the ERC with the aim of making the ERC a reality.
-                            <br />The European Rover Challenge (ERC) is an international competition organized by the European Space Foundation and the Space Ministry of Defence, which aims to promote the development of young engineers and scientists in the field of space science. Recognized as one of the most important competitions in the world, it encourages young people to innovate in the field of space technologies while providing opportunities to network with professionals.
-                            <br />Thanks to this competition, both our team and our club have the opportunity to achieve international recognition. As part of this activity, you will invest in innovation, technology, and the future. With this sponsorship, young engineers and researchers can stand out by taking on a role that benefits society.
-                        </p>
+                            <br />{t('info1')}
+                            <br />{t('info2')}
+                            <br />{t('info3')}
+                            <br />{t('info4')}
+                           </p>
                     </div>
                 </section>
 
@@ -47,7 +48,7 @@ export default function ERCPage() {
 
             <footer className="bg-black py-6">
                 <div className="container mx-auto text-center text-gray-400">
-                    <p>&copy; 2024 Eco Rover Team. All rights reserved.</p>
+                    <p>&copy; {g('footer')}</p>
                 </div>
             </footer>
         </div>

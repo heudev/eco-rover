@@ -8,6 +8,7 @@ import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
 export default function SponsorshipPage() {
+    const g = useTranslations('general');
     const t = useTranslations('sponsorship');
 
     return (
@@ -29,7 +30,7 @@ export default function SponsorshipPage() {
 
                     <div className="container mx-auto text-center px-6 mt-40 lg:px-0 flex flex-col items-center">
                         <h3 className="title-font text-4xl font-semibold text-white mb-6"> {t('currentSponsors')}</h3>
-                        <p className="text-lg text-gray-300 mb-8">We are grateful for the support of our partners.</p>
+                        <p className="text-lg text-gray-300 mb-8">{t('subTitle')}</p>
                         <div className="flex flex-col items-center gap-12">
                             {Object.keys(sponsorShip).map((category) => (
                                 <div key={category} className="w-full">
@@ -111,59 +112,58 @@ export default function SponsorshipPage() {
                 {/* Sponsorship Packages Section */}
                 <section id="sponsorship-packages" className="py-20 bg-black">
                     <div className="container mx-auto text-center px-6 lg:px-0">
-                        <h3 className="title-font text-4xl font-semibold text-white mb-6">Our Sponsorship Packages</h3>
-                        <p className="text-lg text-gray-300 mb-10">Choose the sponsorship level that aligns with your brand and goals.</p>
+                        <h3 className="title-font text-4xl font-semibold text-white mb-6"> {t('packages')}</h3>
+                        <p className="text-lg text-gray-300 mb-10">{t('choosePackage')}</p>
 
                         <div className="grid gap-8 md:grid-cols-2">
                             {[
                                 {
-                                    title: 'Bronze Sponsor',
+                                    title: t('bronzeSponsor'),   
                                     amount: 'Minimum 15,000 TL',
                                     perks: [
-                                        'Logo on the vehicle (10x10 size)',
-                                        'Team apparel logo (5x5 size)',
-                                        '1 year website display',
-                                        'Social media acknowledgment',
-                                        'Name on school bulletins',
+                                        t('brozeInfo1'),
+                                        t('brozeInfo2'),
+                                        t('brozeInfo3'),
+                                        t('brozeInfo4'),
+                                        t('brozeInfo5'),
                                     ],
                                     bgColor: 'bg-gradient-to-r from-orange-300 to-orange-500',
                                 },
                                 {
-                                    title: 'Silver Sponsor',
+                                    title: t('silverSponsor'),
                                     amount: 'Minimum 25,000 TL',
                                     perks: [
-                                        'Logo on the vehicle (15x15 size)',
-                                        'Team apparel logo (8x8 size)',
-                                        '1 year website display',
-                                        'Social media acknowledgment with activity highlights',
-                                        'Name on school bulletins',
-                                        'Special certificate of appreciation',
+                                        t('silverInfo1'),
+                                        t('silverInfo2'),
+                                        t('silverInfo3'),
+                                        t('silverInfo4'),
+                                        t('silverInfo5'),
+                                        t('silverInfo6'),
                                     ],
                                     bgColor: 'bg-gradient-to-r from-gray-400 to-gray-600',
                                 },
                                 {
-                                    title: 'Gold Sponsor',
+                                    title: t('goldSponsor'),
                                     amount: 'Minimum 35,000 TL',
                                     perks: [
-                                        'Logo on the vehicle (20x20 size)',
-                                        'Team apparel logo (12x12 size)',
-                                        '1 year website display',
-                                        'Social media acknowledgment with activity highlights',
-                                        'Name on school bulletins',
-                                        'Special certificate of appreciation and event invitation',
+                                        t('goldInfo1'),
+                                        t('goldInfo2'),
+                                        t('goldInfo3'),
+                                        t('goldInfo4'),
+                                        t('goldInfo5'),
+                                        t('goldInfo6'),
                                     ],
                                     bgColor: 'bg-gradient-to-r from-yellow-400 to-yellow-600',
                                 },
                                 {
-                                    title: 'Diamond Sponsor',
+                                    title:  t('diamondSponsor'),
                                     amount: 'Minimum 50,000 TL',
                                     perks: [
-                                        'Logo on the vehicle (30x30 size)',
-                                        'Team apparel logo (20x20 size)',
-                                        '2 years website display',
-                                        'Social media acknowledgment with activity highlights',
-                                        'Name on school bulletins',
-                                        'Special certificate and plaque of appreciation',
+                                        t('diamondInfo1'),
+                                        t('diamondInfo2'),
+                                        t('diamondInfo3'),
+                                        t('diamondInfo4'),
+                                        t('diamondInfo5'),
                                     ],
                                     bgColor: 'bg-gradient-to-r from-blue-400 to-blue-600',
                                 },
@@ -184,18 +184,14 @@ export default function SponsorshipPage() {
                         </div>
                     </div>
                 </section>
-
-
-
-
-
+                
                 {/* Call to Action Section */}
                 <Contact />
             </main>
 
             <footer className="bg-black py-6">
                 <div className="container mx-auto text-center text-gray-400">
-                    <p>&copy; 2024 Eco Rover Team. All rights reserved.</p>
+                    <p>&copy; {g('footer')}</p>
                 </div>
             </footer>
         </div>

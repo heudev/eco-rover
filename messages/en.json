@@ -1,18 +1,99 @@
 {
+    "general": {
+        "footer": "2024 Eco Rover Team. All rights reserved."
+    },
     "home": {
-        "missionMars": "Join our mission to uncover the mysteries of Mars."
+        "missionMars": "Join our mission to uncover the mysteries of Mars.",
+        "about": "About us",
+        "info": "SAAT, we offer academic and technical development opportunities for students interested in aerospace engineering. We are the only representative of the European Aerospace Students&apos; Association (EUROAVIA) in the Aegean Region. Various activities, technical trips, and projects to improve the sectoral skills of our members are strengthening.",
+        "info1": "As part of this vision, the ECO-ROVER Team European Rover Challenge (ERC) competition established and its members are carefully selected is a team of engineers. Our goal is to create space exploration vehicles that contribute to innovation and technology by designing. To ensure teamwork, to achieve great successes with teamwork is to throw it away.",
+        "pastProjects": "Our Past Projects",
+        "horizon": "Horizon Rocket",
+        "ieuRocket": "İzmir University of Economics Rocket Team",
+        "ecoWheels": "EcoWheels",
+        "ieuElectricWehicle": "İzmir University of Economics Electric Vehicle Development Team",
+        "sponsors": "Our Current Sponsors",
+        "subTitleSponsor": "We are grateful for the support of our partners."
     },
     "erc": {
-        "whatIsERC": "What is ERC and Why We Participate"
+        "whatIsERC": "What is ERC and Why We Participate",
+        "info1": "The European Rover Challenge (ERC) is the world's premier space exploration vehicle (ROVER) competition. The competition included 69 different participants from 23 different countries. Our university team is participating and challenging Mars-like space exploration vehicles capable of performing missions by designing and producing both technical skills and exhibiting their innovation skills.",                  
+        "info2": "As the Space and Aviation Technologies Club, we have developed engineering skills, gained experience in our work, and are ready to compete internationally. We have selected candidates to represent our country and our supporters in the best possible way to participate in the ERC with the aim of making the ERC a reality.",
+        "info3": "The European Rover Challenge (ERC) is an international competition organized by the European Space Foundation and the Space Ministry of Defence, which aims to promote the development of young engineers and scientists in the field of space science. Recognized as one of the most important competitions in the world, it encourages young people to innovate in the field of space technologies while providing opportunities to network with professionals.",
+        "info4": "Thanks to this competition, both our team and our club have the opportunity to achieve international recognition. As part of this activity, you will invest in innovation, technology, and the future. With this sponsorship, young engineers and researchers can stand out by taking on a role that benefits society."
     },
     "mission": {
-        "missionAndVision": "Check It out our Mission & Vision"
+        "missionAndVision": "Check It out our Mission & Vision",
+        "subTitle": "We are a passionate team dedicated to creating groundbreaking innovations in the field of space exploration.",
+        "ourVision": "Our Vision",
+        "vision": "As a pioneering team in space exploration, we aim to produce sustainable solutions in international competitions with innovative technologies and make our university a recognized leader in the global scientific community.",
+        "vision1": "ECO-ROVER aims to inspire future space projects by supporting student entrepreneurship and teamwork.",
+        "ourMission": "Our Mission",
+        "mission": "As ECO-ROVER, we aim to develop innovative, sustainable, and high-performance rover vehicles by supporting the development of university students in the field of science and technology. Our goal as a team is to represent our country, our university, and our supporters in the best way on international platforms while providing practical experience for future engineers."
     },
     "sponsorship": {
-        "currentSponsors": "Our Current Sponsors"
+        "currentSponsors": "Our Current Sponsors",
+        "subTitle": "We are grateful for the support of our partners.",
+        "packages": "Our Sponsorship Packages",
+        "choosePackage": "Choose the sponsorship level that aligns with your brand and goals.",
+        "bronzeSponsor": "Bronze Sponsor",
+        "brozeInfo1": "Logo on the vehicle (10x10 size)",
+        "brozeInfo2": "Team apparel logo (5x5 size)",
+        "brozeInfo3": "1 year website display",
+        "brozeInfo4": "Social media acknowledgment",
+        "brozeInfo5": "Name on school bulletins",
+        "silverSponsor": "Silver Sponsor",
+        "silverInfo1": "Logo on the vehicle (15x15 size)",
+        "silverInfo2": "Team apparel logo (8x8 size)'",
+        "silverInfo3": "1 year website display",
+        "silverInfo4": "Social media acknowledgment with activity highlights",
+        "silverInfo5": "Name on school bulletins",
+        "silverInfo6": "Special certificate of appreciation",
+        "goldSponsor": "Gold Sponsor",
+        "goldInfo1": "Logo on the vehicle (20x20 size)",
+        "goldInfo2": "Team apparel logo (12x12 size)",
+        "goldInfo3": "1 year website display",
+        "goldInfo4": "Social media acknowledgment with activity highlights",
+        "goldInfo5": "Name on school bulletins",
+        "goldInfo6": "Special certificate of appreciation and event invitation",
+        "diamondSponsor": "Diamond Sponsor",
+        "diamondInfo1": "logo on the vehicle (30x30 size)",
+        "diamondInfo2": "Team apparel logo (20x20 size)",
+        "diamondInfo3": "2 years website display",
+        "diamondInfo4": "Social media acknowledgment with activity highlights",
+        "diamondInfo5": "Name on school bulletins",
+        "diamondInfo6": "Special certificate and plaque of appreciation"
+
     },
     "team": {
-        "missionTeamTitle": "Meet the Stars Behind the Mission!"
+        "missionTeamTitle": "Meet the Stars Behind the Mission!",
+        "subTitle": "Eclipse, our Eco Rover creation, blends sustainability with exploration.",
+        "subTitle1": "Designed to illuminate the unknown, it navigates where light and shadow meet!",
+        "advisors": "ADVISORS",
+        "leaders": "LEADERS",
+        "captains": "CAPTAINS",
+        "advisor": "Advisor",
+        "pınarD": "Associate Professor at IUE Electrical - Electronics Engineering",
+        "senizD": "Professor at IUE Mechatronics Engineering Department",
+        "leader": "Co-Leader",
+        "aerospace": "Aerospace Engineering and Mechanical Engineering",
+        "mechanical": "Mechanical Engineering",
+        "cSoftware": "Captain of the Software Team",
+        "cElectronics": "Captain of the Electronic Team",
+        "cMechanics": "Captain of the Mechanical Team",
+        "hScience": "Head of the Science",
+        "hFinance": "Head of the Finance",
+        "ugurD": "Electrical - Electronics Engineering / Computer Engineering",
+        "electrical": "Electrical - Electronics Engineering",
+        "medicine": "Medicine",
+        "ırmakD": "English Translation and Interpreting, and International Trade and Finance"
+    },
+    "teamComponent": {
+        "Mechanics": "Mechanics",
+        "Software": "Software",
+        "Electronics": "Electronics",
+        "Science": "Science",
+        "HumanResourceFinance": "Human Resources & Finance"
     },
     "navbar": {
         "about": "About",
@@ -20,5 +101,26 @@
         "contact": "Contact",
         "sponsorship": "Sponsorship",
         "team": "Team"
+    },
+    "contact": {
+        "follow": "Follow us on social media",
+        "followSocial": "Follow us on our social media accounts for the latest news about Eco-Rover.",
+        "BuildFuture": "Building the Future Together",
+        "click": "Click to download our sponsorship brochure, which outlines the opportunities for collaboration and support for Eco-Rover.",
+        "getInTouch": "Get in touch with us",
+        "coLead": "Co-Lead",
+        "burakcan": "Burakcan Akçit",
+        "burakcanMail": "burakcanakcit@gmail.com ",
+        "burakcanLn": "linkedin.com/burakcan-akcit",
+        "burakcanInstagram": "instagram.com/burakcan.akcit",
+        "burakcanTel": "+90 538 010 88 81",
+        "headFinance": "Head of Finance",
+        "irmak": "Irmak İşal",
+        "irmakMail": "isalirmak@gmail.com",
+        "irmakLn": "linkedin.com/in/irmak-işal",
+        "irmakInstagram": "instagram.com/river_4991",
+        "irmakTel": "+90 506 155 90 95",
+        "ieu": "Izmir University of Economics",
+        "address": "Fevzi Çakmak, Sakarya Cd. No:156, 35330 Balçova/Izmir/Türkiye"
     }
 }

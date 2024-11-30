@@ -7,7 +7,8 @@ import Navbar from '../_components/navbar';
 import { useTranslations } from 'next-intl';
 
 export default function Home() {
-    const t = useTranslations('home');
+    const g = useTranslations('general');
+    const t = useTranslations('team');
 
     const scrollToSection = () => {
         const section = document.getElementById('team-leads');
@@ -33,10 +34,10 @@ export default function Home() {
                 {/* Hero Content */}
                 <div className="hero bg-base-200 bg-opacity-0 min-h-screen flex items-center justify-center">
                     <div className="flex flex-col items-center">
-                        <h1 className="title-font text-5xl font-bold mb-4 text-center">{t('missionMars')}</h1>
+                        <h1 className="title-font text-5xl font-bold mb-4 text-center">{t('missionTeamTitle')}</h1>
                         <p className="text-lg leading-relaxed text-center">
-                            Eclipse, our Eco Rover creation, blends sustainability with exploration.
-                            <br />Designed to illuminate the unknown, it navigates where light and shadow meet!
+                            {t('subTitle')}
+                            <br />{t('subTitle1')}
                         </p>
 
                         {/* Animated Button */}
@@ -68,13 +69,13 @@ export default function Home() {
 
                         <div className="flex flex-col items-center justify-center">
 
-                            <h3 className="title-font text-4xl font-semibold text-white mb-8">ADVISORS</h3>
+                            <h3 className="title-font text-4xl font-semibold text-white mb-8">{t('advisors')}</h3>
 
                             <div className="flex flex-wrap justify-center items-center w-full mb-16">
 
                                 <div className="flex flex-wrap flex-col lg:flex-row items-center gap-24 mx-auto p-4">
-                                    <TeamMemberCard name="Pınar Oğuz Ekim" role="Advisor" department="Associate Professor at IUE Electrical - Electronics Engineering" imageUrl="https://odin-oasis.izmirekonomi.edu.tr/images/photos/32462caecc122eb133c171e61f69dca9bd08d662.jpg" lnLink="https://www.linkedin.com/in/pinar-oguz-ekim-2b475543/" />
-                                    <TeamMemberCard name="Şeniz Ertuğrul" role="Advisor" department="Professor at IUE Mechatronics Engineering Department" imageUrl="/members/senizErtugrul.png" lnLink="https://www.linkedin.com/in/%C5%9Feniz-ertu%C4%9Frul-9a19a510b/" />
+                                    <TeamMemberCard name="Pınar Oğuz Ekim" role={t('advisor')} department={t('pınarD')} imageUrl="https://odin-oasis.izmirekonomi.edu.tr/images/photos/32462caecc122eb133c171e61f69dca9bd08d662.jpg" lnLink="https://www.linkedin.com/in/pinar-oguz-ekim-2b475543/" />
+                                    <TeamMemberCard name="Şeniz Ertuğrul" role={t('advisor')} department={t('senizD')} imageUrl="/members/senizErtugrul.png" lnLink="https://www.linkedin.com/in/%C5%9Feniz-ertu%C4%9Frul-9a19a510b/" />
                                 </div>
 
                             </div>
@@ -82,13 +83,13 @@ export default function Home() {
 
                         <div className="flex flex-col items-center justify-center">
 
-                            <h3 className="title-font text-4xl font-semibold text-white mb-8">LEADERS</h3>
+                            <h3 className="title-font text-4xl font-semibold text-white mb-8">{t('leaders')}</h3>
 
                             <div className="flex flex-wrap justify-center items-center w-full mb-16">
 
                                 <div className="flex flex-col lg:flex-row items-center gap-24 mx-auto p-4">
-                                    <TeamMemberCard name="Burakcan Akçit" role="Lead" department="Aerospace Engineering and Mechanical Engineering" imageUrl="/members/burakcanAkcit.jpg" lnLink="https://www.linkedin.com/in/burakcan-akcit-2727a0223/" />
-                                    <TeamMemberCard name="Berkay Bağcı" role="Lead" department="Mechanical Engineering" imageUrl="/members/berkayBagcı.jpg" lnLink="https://www.linkedin.com/in/berkay-ba%C4%9Fc%C4%B1-073803164/" />
+                                    <TeamMemberCard name="Burakcan Akçit" role={t('leader')} department={t('aerospace')} imageUrl="/members/burakcanAkcit.jpg" lnLink="https://www.linkedin.com/in/burakcan-akcit-2727a0223/" />
+                                    <TeamMemberCard name="Berkay Bağcı" role={t('leader')} department={t('mechanical')} imageUrl="/members/berkayBagcı.jpg" lnLink="https://www.linkedin.com/in/berkay-ba%C4%9Fc%C4%B1-073803164/" />
                                 </div>
 
                             </div>
@@ -97,16 +98,16 @@ export default function Home() {
 
                         <div className="flex flex-col items-center justify-center">
 
-                            <h3 className="title-font text-4xl font-semibold text-white mb-8">CAPTAINS</h3>
+                            <h3 className="title-font text-4xl font-semibold text-white mb-8">{t('captains')}</h3>
                             <div className="flex flex-wrap justify-center items-center w-full mb-16">
 
                                 <div className="flex flex-wrap justify-center flex-col lg:flex-row items-center gap-24 mx-auto p-4">
-                                    <TeamMemberCard name="Uğur Emin Baynal" role="Captain of the Software Team" department="Electrical - Electronics Engineering / Computer Engineering" imageUrl="/members/ugurEminBaynal.jpg" lnLink="https://www.linkedin.com/in/ugur-emin-baynal-1b74781b2/?locale=en_US" />
-                                    <TeamMemberCard name="Metehan Şaba" role="Captain of the Software Team" department="Electrical - Electronics Engineering" imageUrl="/members/metehanSaba.jpg" lnLink="https://www.linkedin.com/in/metehan-%C5%9Faba/" />
-                                    <TeamMemberCard name="Arda Demirdöğen" role="Captain of the Electronic Team" department="Electrical - Electronics Engineering" imageUrl="/members/ardaDemirdogen.jpg" lnLink="https://www.linkedin.com/in/arda-demird%C3%B6%C4%9Fen-72b237240/" />
-                                    <TeamMemberCard name="Ege Mutlu" role="Captain of the Mechanical Team" department="Aerospace Engineering" imageUrl="/members/egeMutlu.jpg" lnLink="https://www.linkedin.com/in/ege-mutlu-671917284" />
-                                    <TeamMemberCard name="Alara Rodoplu" role="Head of the Science" department="Medicine" imageUrl="/members/alaraRodoplu.jpg" lnLink="https://www.linkedin.com/in/alara-rodoplu-196923245/" />
-                                    <TeamMemberCard name="Irmak İşal" role="Head of the Finance" department="English Translation and Interpreting, and International Trade and Finance " imageUrl="https://media.licdn.com/dms/image/v2/D4D03AQE9APTpFyiUyw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1710583941967?e=2147483647&v=beta&t=10c22P0AohC2OBuxhOrLzmNeK9jw7g1mQLbKGA1FY5g" lnLink="" />
+                                    <TeamMemberCard name="Uğur Emin Baynal" role={t('cSoftware')} department={t('ugurD')} imageUrl="/members/ugurEminBaynal.jpg" lnLink="https://www.linkedin.com/in/ugur-emin-baynal-1b74781b2/?locale=en_US" />
+                                    <TeamMemberCard name="Metehan Şaba" role={t('cSoftware')} department={t('electrical')} imageUrl="/members/metehanSaba.jpg" lnLink="https://www.linkedin.com/in/metehan-%C5%9Faba/" />
+                                    <TeamMemberCard name="Arda Demirdöğen" role={t('cElectronics')} department={t('electrical')} imageUrl="/members/ardaDemirdogen.jpg" lnLink="https://www.linkedin.com/in/arda-demird%C3%B6%C4%9Fen-72b237240/" />
+                                    <TeamMemberCard name="Ege Mutlu" role={t('cMechanics')} department={t('aerospace')} imageUrl="/members/egeMutlu.jpg" lnLink="https://www.linkedin.com/in/ege-mutlu-671917284" />
+                                    <TeamMemberCard name="Alara Rodoplu" role={t('hScience')} department={t('medicine')} imageUrl="/members/alaraRodoplu.jpg" lnLink="https://www.linkedin.com/in/alara-rodoplu-196923245/" />
+                                    <TeamMemberCard name="Irmak İşal" role={t('hFinance')} department={t('ırmakD')} imageUrl="https://media.licdn.com/dms/image/v2/D4D03AQE9APTpFyiUyw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1710583941967?e=2147483647&v=beta&t=10c22P0AohC2OBuxhOrLzmNeK9jw7g1mQLbKGA1FY5g" lnLink="" />
                                 </div>
 
                             </div>
@@ -118,7 +119,7 @@ export default function Home() {
 
             <footer className="bg-black py-6">
                 <div className="container mx-auto text-center text-gray-400">
-                    <p>&copy; 2024 EcoRover Team. All rights reserved.</p>
+                    <p>&copy;  {g('footer')}</p>
                 </div>
             </footer>
         </div>

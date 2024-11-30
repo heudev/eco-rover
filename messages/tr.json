@@ -1,18 +1,97 @@
 {
+    "general": {
+        "footer": "2024 Eco-Rover Takımı. Tüm hakları saklıdır."
+    },
     "home": {
-        "missionMars": "Mars'ın gizemlerini keşfetmek için görevimize katılın."
+        "missionMars": " Mars'ın gizemlerini aralayacağımız yolculuğumuzda bize katılın",
+        "about": "Hakkımızda",
+        "info": "Uzay ve Havacılık Teknolojileri Kulübü (SAAT) olarak, havacılık ve uzay mühendisliğine ilgi duyan öğrencilere akademik ve teknik açıdan gelişim fırsatları sunmaktayız. Avrupa Havacılık ve Uzay Mühendisliği Öğrencileri Birliği'nin (EUROAVIA) Ege Bölgesi'ndeki tek temsilciliğini yapmaktayız. Çeşitli etkinlikler, teknik geziler ve üyelerimizin sektörel becerilerini geliştirmeye yönelik projeler ile güçlenmekteyiz.",
+        "info1": "Vizyonumuzun bir parçası olarak kurulan ECO-ROVER Takımı, European Rover Challenge (ERC) yarışmasına katılmak üzere özenle seçilmiş mühendislik öğrencilerinden oluşmaktadır. Hedefimiz, yenilik ve teknolojiye katkı sağlayacak uzay keşif araçları tasarlayarak hayata geçirmektir. Ekip çalışmasını sağlayarak büyük başarılara imza atmayı hedeflemektedir.",
+        "pastProjects": "Geçmiş Projelerimiz",
+        "horizon": "Horizon Rocket",
+        "ieuRocket": "İzmir Ekonomi Üniversitesi Roket Takımı",
+        "ecoWheels": "EcoWheels",
+        "ieuElectricWehicle": "İzmir Ekonomi Üniversitesi Elektrikli Araç Geliştirme Takımı ",
+        "sponsors": "Mevcut Sponsorlarımız",
+        "subTitleSponsor": "Sponsorlarımızın destekleri için müteşekkiriz."
     },
     "erc": {
-        "whatIsERC": "ERC nedir ve neden katılıyoruz?"
+        "whatIsERC": "ERC Nedir ve Neden Katıldık?",
+        "info1": "Her yıl Polonya’da düzenlenen European Rover Challenge (ERC), dünyanın önde gelen uzay keşif araçlarının (ROVER) katıldığı bir yarışmadır. Yarışmada 23 farklı ülkeden 69 farklı katılımcı yer almaktadır. Teknik ve yenilikçi becerilerini sergileyen üniversite takımımız, Mars benzeri ortamlarda kullanılmak üzere tasarlayıp ürettikleri ve verilen görevleri gerçekleştirebilme özelliği olan uzay keşif araçlarıyla bu yarışmaya katılmakta ve rakiplerine meydan okumaktadır",                  
+        "info2": " Uzay ve Havacılık Teknolojileri Kulübü (SAAT) olarak mühendislik becerilerimizi geliştirerek çalışmalarımızda deneyim kazandık ve uluslararası alanda yarışmak üzere hazır hale geldik. Eclipse’i hayata geçirme hedefiyle ERC'ye katılmak üzere ülkemizi ve sponsorlarımızı en iyi şekilde temsil edecek takım üyelerimizi seçtik",
+        "info3": "European Rover Challenge (ERC), uzay bilimleri alanında genç mühendis ve bilim insanlarının gelişimini desteklemeyi amaçlayan Avrupa Uzay Vakfı ve Uzay Savunma Bakanlığı tarafından düzenlenen uluslararası bir yarışmadır. Dünyanın en önde gelen yarışmalarından biri olarak kabul edilen bu yarışma, gençleri uzay teknolojileri alanında yenilikler yapmaya teşvik etmenin yanında uzmanlarla bir araya gelme fırsatı sunmaktadır.",
+        "info4": "Bu yarışma sayesinde hem ekibimiz hem de kulübümüz uluslararası tanınırlık elde etme fırsatı yakalayacaktır. Bu projenin bir parçası olarak yeniliğe, teknolojiye ve geleceğe yatırım yapmış olacaksınız. Bu sponsorluk sayesinde genç mühendisler ve araştırmacılar topluma faydalı bir rol üstlenerek kendilerini gösterme ayrıcalığına sahip olacak."
     },
     "mission": {
-        "missionAndVision": "Misyon ve Vizyonumuzu Keşfedin"
+        "missionAndVision": " Misyonumuza ve Vizyonumuza Göz Atın",
+        "subTitle": " Takımımız, uzay araştırmaları alanında çığır açan yenilikler üretmeye büyük bir tutkuyla bağladır.",
+        "ourVision": "Vizyonumuz",
+        "vision": "Uzay araştırmaları alanına öncülük eden bir takım olarak, yenilikçi teknolojilerle uluslararası yarışmalarda sürdürülebilir çözümler üretmeyi ve üniversitemizi küresel bilim camiasında tanınan bir lider haline getirmeyi hedefliyoruz.",
+        "ourMission": "Misyonumuz",
+        "mission": "ECO-ROVER olarak üniversite öğrencilerinin bilim ve teknoloji alanındaki gelişimlerini destekleyerek yenilikçi, sürdürülebilir ve yüksek performanslı rover uzay araçları geliştirmeyi hedeflemekteyiz. Takımımızın misyonu, geleceğin mühendislerine pratik deneyim kazandırmanın yanında ülkemizi, üniversitemizi ve destekçilerimizi uluslararası platformlarda en iyi şekilde temsil etmektir."
     },
     "sponsorship": {
-        "currentSponsors": "Mevcut Sponsorlarımız"
+        "currentSponsors": "Mevcut Sponsorlarımız",
+        "subTitle": " Sponsorlarımızın destekleri için müteşekkiriz.",
+        "packages": "Sponsorluk Paketlerimiz",
+        "choosePackage": "Markanız ve hedeflerinizle uyuşan sponsorluk paketini bulun.",
+        "bronzeSponsor": "Bronz Sponsor",
+        "brozeInfo1": "Araç üzerindeki logo (10x10 boyutunda)",
+        "brozeInfo2": "Takım kıyafeti logosu (5x5 boyutunda)",
+        "brozeInfo3": "1 yıllık web sitesi gösterimi",
+        "brozeInfo4": "Sosyal medya bilgilendirmesi",
+        "brozeInfo5": "Okul bültenlerindeki isim",
+        "silverSponsor": "Gümüş Sponsor",
+        "silverInfo1": "Araç üzerindeki logo (15x15 boyutunda)",
+        "silverInfo2": "Takım kıyafeti logosu (8x8 boyutunda)",
+        "silverInfo3": "1 yıllık web sitesi gösterimi",
+        "silverInfo4": "Faaliyetlerin öne çıktığı sosyal medya bilgilendirmesi",
+        "silverInfo5": "Okul bültenlerindeki isim",
+        "silverInfo6": "Özel teşekkür sertifikası",
+        "goldSponsor": "Altın Sponsor",
+        "goldInfo1": "Araç üzerindeki logo (20x20 boyutunda)",
+        "goldInfo2": "Takım kıyafeti logosu (12x12 boyutunda)",
+        "goldInfo3": "1 yıllık web sitesi gösterimi",
+        "goldInfo4": "Faaliyetlerin öne çıktığı sosyal medya bilgilendirmesi",
+        "goldInfo5": "Okul bültenlerindeki isim",
+        "goldInfo6": "Özel teşekkür sertifikası",
+        "diamondSponsor": "Elmas Sponsor",
+        "diamondInfo1": "Araç üzerindeki logo (30x30 boyutunda)",
+        "diamondInfo2": "Takım kıyafeti logosu (20x20 boyutunda)",
+        "diamondInfo3": "2 yıllık web sitesi gösterimi",
+        "diamondInfo4": "Faaliyetlerin öne çıktığı sosyal medya bilgilendirmesi",
+        "diamondInfo5": "Okul bültenlerindeki isim",
+        "diamondInfo6": "Özel sertifika ve teşekkür plaketi"
     },
     "team": {
-        "missionTeamTitle": "Görevimizin Arkasındaki Yıldızlarla Tanışın!"
+        "missionTeamTitle": " Takımımızın Yıldızlarıyla Tanışın!",
+        "subTitle": "Eco-Rover takımımız ürünü Eclipse, sürdürülebilirliği keşif faaliyetleriyle buluşturuyor.",
+        "subTitle1": "Bilinmeyeni gün yüzüne çıkarma hedefiyle tasarlanan Eclipse, ışığın ve gölgenin buluştuğu yerde bizlere rehberlik ediyor!",
+        "advisors": "DANIŞMANLAR",
+        "leaders": "LİDERLER",
+        "captains": "KAPTANLAR",
+        "advisor": "Danışman",
+        "pınarD": "İEÜ Elektrik - Elektronik Mühendisliği'nde Doçent Frofesör",
+        "senizD": "İEÜ Mekatronik Mühendisliği Bölümü'nde Profesör",
+        "leader": "Eş Lider",
+        "aerospace": "Uzay ve Havacılık Mühendisliği",
+        "mechanical": "Makine Mühendisliği",
+        "cSoftware": "Yazılım Takım Kaptanı",
+        "cElectronics": "Elektronik Takım Kaptanı",
+        "cMechanics": "Mekanik Takım Kaptanı",
+        "hScience": "Bilim Görevi Sorumlusu",
+        "hFinance": "Mali İşler Sorumlusu",
+        "ugurD": "Elektrik - Elektronik Mühendisliği, ve Bilgisayar Mühendisliği",
+        "electrical": "Elektrik - Elektronik Mühendisliği",
+        "medicine": "Tıp",
+        "ırmakD": "İngilizce Mütercim ve Tercümanlık, ve uluslararası Ticaret ve Finans"
+    },
+    "teamComponent": {
+        "Mechanics": "Mekanik",
+        "Software": "Yazılım",
+        "Electronics": "Elektronik",
+        "Science": "Bilim",
+        "HumanResourceFinance": "İnsan Kaynakları & Mali İşler"
     },
     "navbar": {
         "about": "Hakkımızda",
@@ -20,5 +99,27 @@
         "contact": "İletişim",
         "sponsorship": "Sponsorluk",
         "team": "Takım"
+    },
+    "contact": {
+        "follow": " Bizi Sosyal Medyadan Takip Edin",
+        "followSocial": " Eco-Rover hakkındaki güncel gelişmelerden haberdar olmak için sosyal medya üzerinden bizi takip edin.",
+        "BuildFuture": " Geleceği Birlikte İnşa Ediyoruz",
+        "click": "Eco-Rover için iş birliği ve destek imkânlarını sunan sponsorluk broşürümüzü indirmek için tıklayınız.",
+        "getInTouch": "Bizimle İletişime Geçin",
+        "coLead": "Eş Lider",
+        "burakcan": "Burakcan Akçit",
+        "burakcanMail": "burakcanakcit@gmail.com ",
+        "burakcanLn": "linkedin.com/burakcan-akcit",
+        "burakcanInstagram": "instagram.com/burakcan.akcit",
+        "burakcanTel": "+90 538 010 88 81",
+        "headFinance": "Mali İşler Sorumlusu",
+        "irmak": "Irmak İşal",
+        "irmakMail": "isalirmak@gmail.com",
+        "irmakLn": "linkedin.com/in/irmak-işal",
+        "irmakInstagram": "instagram.com/river_4991",
+        "irmakTel": "+90 506 155 90 95",
+        "ieu": "İzmir Ekonomi Üniversitesi",
+        "address": "Fevzi Çakmak, Sakarya Cd. No:156, 35330 Balçova/Izmir/Türkiye"
     }
 }
+

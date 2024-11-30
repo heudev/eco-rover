@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
 export default function Home() {
-
+  const g = useTranslations('general');
   const t = useTranslations('home');
 
   return (
@@ -33,13 +33,12 @@ export default function Home() {
 
         {/* About Section */}
         <section id="about" className="py-20 bg-black">
-          <h3 className="title-font text-4xl font-semibold mb-6 text-center">About Us</h3>
+          <h3 className="title-font text-4xl font-semibold mb-6 text-center">{t('about')}</h3>
           <div className="container mx-auto px-6 lg:px-0 flex flex-col lg:flex-row items-center lg:items-start">
             <p className="text-lg text-gray-300 leading-relaxed">
-              SAAT, we offer academic and technical development opportunities for students interested in aerospace engineering. We are the only representative of the European Aerospace Students&apos; Association (EUROAVIA) in the Aegean Region. Various activities, technical trips, and projects to improve the sectoral skills of our members are strengthening.
-              <br />
-              As part of this vision, the ECO-ROVER Team European Rover Challenge (ERC) competition established and its members are carefully selected is a team of engineers. Our goal is to create space exploration vehicles that contribute to innovation and technology by designing. To ensure teamwork, to achieve great successes with teamwork is to throw it away.
-            </p>
+              {t('info')}
+              <br />{t('info1')}
+              </p>
           </div>
         </section>
 
@@ -69,18 +68,18 @@ export default function Home() {
         {/* Past Projects Section */}
         <section id="projects" className="py-20 bg-black">
           <div className="container mx-auto text-center px-6 lg:px-0">
-            <h3 className="title-font text-4xl font-semibold text-white mb-6">Our Past Projects</h3>
+            <h3 className="title-font text-4xl font-semibold text-white mb-6">{t('pastProjects')}</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
               <div className="bg-black p-6 rounded-lg shadow-lg">
                 <Image src="/images/horizon.png" width={1920} height={1080} alt="Project 1" className="mb-4 rounded-lg mx-auto" />
                 <h4 className="text-2xl font-semibold text-white mb-2"></h4>
-                <a href="https://horizonrocket.com " className="hover:text-white transition-colors text-center text-2xl font-bold">Horizon Rocket</a>
-                <p className="text-gray-300">İzmir University of Economics Rocket Team</p>
+                <a href="https://horizonrocket.com " className="hover:text-white transition-colors text-center text-2xl font-bold">{t('horizon')}</a>
+                <p className="text-gray-300">{t('ieuRocket')}</p>
               </div>
               <div className="bg-black p-6 rounded-lg shadow-lg">
                 <Image src="/images/ecowheels.png" width={1920} height={1080} alt="Project 1" className="mb-4 rounded-lg mx-auto" />
-                <a href="https://ecowheels.ieu.app" className="hover:text-white transition-colors text-center text-2xl font-bold">EcoWheels</a>
-                <p className="text-gray-300">İzmir University of Economics Electric Vehicle Development Team</p>
+                <a href="https://ecowheels.ieu.app" className="hover:text-white transition-colors text-center text-2xl font-bold">{t('ecoWheels')}</a>
+                <p className="text-gray-300">{t('ieuElectricWehicle')}</p>
               </div>
 
             </div>
@@ -102,8 +101,8 @@ export default function Home() {
         {/* Current Sponsors Section */}
         <section id="sponsors" className="bg-black">
           <div className="container mx-auto text-center px-6 lg:px-16 flex flex-col items-center">
-            <h3 className="title-font text-4xl font-semibold text-white mb-6">Our Current Sponsors</h3>
-            <p className="text-lg text-gray-300 mb-8">We are grateful for the support of our partners.</p>
+            <h3 className="title-font text-4xl font-semibold text-white mb-6">{t('sponsors')}</h3>
+            <p className="text-lg text-gray-300 mb-8">{t('subTitleSponsor')}</p>
 
             {/* Catogory */}
             <div className="md:flex justify-between gap-8">
@@ -181,7 +180,7 @@ export default function Home() {
 
       <footer className="bg-black py-6">
         <div className="container mx-auto text-center text-gray-400">
-          <p>&copy; 2024 EcoRover Team. All rights reserved.</p>
+          <p>&copy; {t('missionMars')}</p>
         </div>
       </footer>
     </div>
