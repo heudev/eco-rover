@@ -41,7 +41,6 @@ export default function MissionPage() {
                             <h3 className="title-font text-4xl font-semibold text-white mb-6">{t('ourVision')}</h3>
                             <p className="text-lg text-gray-300 mb-8">
                                  {t('vision')}
-                                <br /> {t('vision1')}
                             </p>
                         </div>
 

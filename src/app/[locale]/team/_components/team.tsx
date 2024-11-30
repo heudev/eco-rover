@@ -49,9 +49,6 @@ export function Menu() {
     const [activeTeam, setActiveTeam] = useState<string | null>(null);
     const t = useTranslations('teamComponent');
     const locale = useLocale();
-  
-    console.log(teamData);
-    console.log(locale);
 
     return (
       <div className="relative flex flex-col items-center">

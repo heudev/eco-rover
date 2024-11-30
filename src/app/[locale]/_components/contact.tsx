@@ -1,9 +1,7 @@
-import { useLocale, useTranslations } from 'next-intl';
+import { useTranslations } from 'next-intl';
 
 export default function Contact() {
   const t = useTranslations('contact');
-  const locale = useLocale();
-  const otherLocale = locale === 'en' ? 'tr' : 'en';
 
   return (
     <section id="contact"
