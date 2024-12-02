@@ -36,9 +36,8 @@ const teamData: TeamData = {
       { name: "Berat Bora Altaş", role: "ROS", department: "Computer Engineering", imageUrl: "/members/beratBoraAltas.jpg" , lnLink: "https://www.linkedin.com/in/berat-bora-alta%C5%9F-079180277"},
       { name: "İdil Buse Zengin", role: "Communication", department: "Computer Engineering", imageUrl: "/members/idilBuseZengin.jpg" , lnLink: "https://www.linkedin.com/in/idil-buse-zengin-65687331a" },
       { name: "Aras Fırat", role: "Communication", department: "Computer Engineering", imageUrl: "/members/arasFırat.jpg" , lnLink: "https://www.linkedin.com/in/aras-firat/" },
-      { name: "Mehmet Akın Savşçı", role: "", department: "Computer Engineering", imageUrl: "/members/mehmetAkınSavacı.jpg" , lnLink: "https://www.linkedin.com/in/mehmet-ak%C4%B1n-sava%C5%9F%C3%A7%C4%B1-571472246/"},
-      { name: "Muhammet Polatlı", role: "Communication", department: "Electrical - Electronics Engineering", imageUrl: "/images/logo.png" , lnLink: "https://www.linkedin.com/in/muhammet-polatl%C4%B1-7719352b7/"},
-      
+     // { name: "Mehmet Akın Savşçı", role: "", department: "Computer Engineering", imageUrl: "/members/mehmetAkınSavacı.jpg" , lnLink: "https://www.linkedin.com/in/mehmet-ak%C4%B1n-sava%C5%9F%C3%A7%C4%B1-571472246/"},
+       
     ],
     tr: [
       { name: "Uğur Emin Baynal", role: "Yazılım Takım Yardımcı Kaptanı", department: "Elektrik - Elektronik Mühendisliği, ve Bilgisayar Mühendisliği", imageUrl: "/members/ugurEminBaynal.jpg", lnLink: "https://www.linkedin.com/in/ugur-emin-baynal-1b74781b2/?locale=en_US" },
@@ -52,9 +51,8 @@ const teamData: TeamData = {
       { name: "Berat Bora Altaş", role: "ROS", department: "Bilgisayar Mühendisliği", imageUrl: "/members/beratBoraAltas.jpg" , lnLink: "https://www.linkedin.com/in/berat-bora-alta%C5%9F-079180277"},
       { name: "İdil Buse Zengin", role: "İletişim", department: "Bilgisayar Mühendisliği", imageUrl: "/members/idilBuseZengin.jpg" , lnLink: "https://www.linkedin.com/in/idil-buse-zengin-65687331a" },
       { name: "Aras Fırat", role: "İletişim", department: "Bilgisayar Mühendisliği", imageUrl: "/members/arasFırat.jpg" , lnLink: "https://www.linkedin.com/in/aras-firat/" },
-      { name: "Mehmet Akın Savşçı", role: "", department: "Bilgisayar Mühendisliği", imageUrl: "/members/mehmetAkınSavacı.jpg" , lnLink: "https://www.linkedin.com/in/mehmet-ak%C4%B1n-sava%C5%9F%C3%A7%C4%B1-571472246/"},
-      { name: "Muhammet Polatlı", role: "İletişim", department: "Elektrik - Elektronik Mühendisliği", imageUrl: "/images/logo.png" , lnLink: "https://www.linkedin.com/in/muhammet-polatl%C4%B1-7719352b7/"},
-  
+     // { name: "Mehmet Akın Savşçı", role: "", department: "Bilgisayar Mühendisliği", imageUrl: "/members/mehmetAkınSavacı.jpg" , lnLink: "https://www.linkedin.com/in/mehmet-ak%C4%B1n-sava%C5%9F%C3%A7%C4%B1-571472246/"},
+    
     ],
   },
   Electronics: {
@@ -63,18 +61,21 @@ const teamData: TeamData = {
           { name: "Eray Özcan Kılıç", role: "3D/Image Processing", department: "Electrical - Electronics Engineering", imageUrl: "/members/erayKılıc.jpg", lnLink: "https://www.linkedin.com/in/erayozcankilic/" },
           { name: "Derin Ünal", role: "PCB and Battery", department: "Electrical - Electronics Engineering", imageUrl: "/members/derinUnal.jpg" , lnLink: "https://www.linkedin.com/in/derinonal"},
           { name: "Can Uysal", role: "", department: "", imageUrl: "/members/canUysal.jpg" , lnLink: ""},
-          { name: "Eren Kaya", role: "Battery", department: "Electrical - Electronics Engineering", imageUrl: "/members/erenKaya.jpg" , lnLink: "https://www.linkedin.com/in/eren-kaya-355434321"},
+         // { name: "Eren Kaya", role: "Battery", department: "Electrical - Electronics Engineering", imageUrl: "/members/erenKaya.jpg" , lnLink: "https://www.linkedin.com/in/eren-kaya-355434321"},
           { name: "Berke Herdem", role: "PCB", department: "Electrical - Electronics Engineering", imageUrl: "/members/berkeHerdem.jpg", lnLink: "https://www.linkedin.com/in/berkeherdem" },
-   
+          { name: "Muhammet Polatlı", role: "Communication", department: "Electrical - Electronics Engineering", imageUrl: "/images/logo.png" , lnLink: "https://www.linkedin.com/in/muhammet-polatl%C4%B1-7719352b7/"},
+          { name: "Sinem İzgi", role: "Communication", department: "Electrical - Electronics Engineering", imageUrl: "/images/logo.png" , lnLink: "https://www.linkedin.com/in/sinem-izgi-85974a259/"},
       ],
       tr: [
           { name: "Arda Demirdöğen", role: "Elektronik Takım Kaptanı", department: "Elektrik - Elektronik Mühendisliği", imageUrl: "/members/ardaDemirdogen.jpg", lnLink: "https://www.linkedin.com/in/arda-demird%C3%B6%C4%9Fen-72b237240/" },
           { name: "Eray Özcan Kılıç", role: "3D/Görüntü İşleme", department: "Elektrik - Elektronik Mühendisliği", imageUrl: "/members/erayKılıc.jpg", lnLink: "https://www.linkedin.com/in/erayozcankilic/" },
           { name: "Derin Ünal", role: "PCB ve Batarya", department: "Elektrik - Elektronik Mühendisliği", imageUrl: "/members/derinUnal.jpg" , lnLink: "https://www.linkedin.com/in/derinonal"},
           { name: "Can Uysal", role: "", department: "", imageUrl: "/members/canUysal.jpg" , lnLink: ""},
-          { name: "Eren Kaya", role: "Batarya", department: "Elektrik - Elektronik Mühendisliği", imageUrl: "/members/erenKaya.jpg" , lnLink: "https://www.linkedin.com/in/eren-kaya-355434321"},
+         // { name: "Eren Kaya", role: "Batarya", department: "Elektrik - Elektronik Mühendisliği", imageUrl: "/members/erenKaya.jpg" , lnLink: "https://www.linkedin.com/in/eren-kaya-355434321"},
           { name: "Berke Herdem", role: "PCB", department: "Elektrik - Elektronik Mühendisliği", imageUrl: "/members/berkeHerdem.jpg", lnLink: "https://www.linkedin.com/in/berkeherdem" },
- 
+          { name: "Muhammet Polatlı", role: "İletişim", department: "Elektrik - Elektronik Mühendisliği", imageUrl: "/images/logo.png" , lnLink: "https://www.linkedin.com/in/muhammet-polatl%C4%B1-7719352b7/"},
+          { name: "Sinem İzgi", role: "İletişim", department: "Elektrik - Elektronik Mühendisliği", imageUrl: "/images/logo.png" , lnLink: "https://www.linkedin.com/in/sinem-izgi-85974a259/"},
+     
       ],
   },
   Science: {

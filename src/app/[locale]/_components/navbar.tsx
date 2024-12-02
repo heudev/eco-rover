@@ -39,10 +39,9 @@ export default function Navbar() {
                             <li><Link href="/mission">{t('visionAndMission')}</Link></li>
                             <li><Link href="/erc">ERC</Link></li>
                             {/*  <li><Link href="/#projects">Projects</Link></li> */}
-                            <li><Link href="/#contact">{t('contact')}</Link></li>
                             <li><Link href="/sponsorship">{t('sponsorship')}</Link></li>
                             <li><Link href="/team">{t('team')}</Link></li>
-
+                            <li><Link href="/#contact">{t('contact')}</Link></li>
                         </ul>
                     </div>
 
@@ -53,9 +52,9 @@ export default function Navbar() {
                             <li><Link href="/mission" className="hover:text-white">{t('visionAndMission')}</Link></li>
                             <li><Link href="/erc" className="hover:text-white">ERC</Link></li>
                             {/*  <li><Link href="/#projects" className="hover:text-white">Projects</Link></li> */}
-                            <li><Link href="/#contact" className="hover:text-white">{t('contact')}</Link></li>
                             <li><Link href="/sponsorship" className="hover:text-white">{t('sponsorship')}</Link></li>
                             <li><Link href="/team" className="hover:text-white">{t('team')}</Link></li>
+                            <li><Link href="/#contact" className="hover:text-white">{t('contact')}</Link></li>
                             <li className='bg-white text-black rounded p-1'>
                                 <a href={"/" + otherLocale}>
                                     {otherLocale.toUpperCase()}

@@ -12,7 +12,7 @@ interface TeamProps {
     lnLink: string;
 }
 
-export function Team({ name, role, department, imageUrl }: TeamProps) {
+export function Team({ name, role, department, imageUrl, lnLink }: TeamProps) {
     return (
         <div className="flex justify-center items-center perspective">
 
@@ -29,8 +29,9 @@ export function Team({ name, role, department, imageUrl }: TeamProps) {
                 </div>
 
                 {/*Hidden by default*/}
-                <div className="absolute w-full h-full flex flex-col items-center justify-center rounded-full shadow-lg backface-hidden opacity-0 transition-opacity duration-300 group-hover:opacity-100 bg-black bg-opacity-50 backdrop-blur-md">
+                <div className="absolute z-10 w-full h-full flex flex-col items-center justify-center rounded-full shadow-lg backface-hidden opacity-0 transition-opacity duration-300 group-hover:opacity-100 bg-black bg-opacity-50 backdrop-blur-md">
                     <p className="text-white">{department}</p>
+                    <a href={lnLink} className="hover:text-white transition-colors"><svg className="h-8 w-8 text-orange-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"> <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />  <rect x="2" y="9" width="4" height="12" />  <circle cx="4" cy="4" r="2" /></svg></a>
                 </div>
 
                 <div className="absolute top-[250px] left-0 w-full flex flex-col items-center justify-center">

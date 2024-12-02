@@ -107,9 +107,8 @@ export default function Home() {
                                     <TeamMemberCard name="Arda Demirdöğen" role={t('cElectronics')} department={t('electrical')} imageUrl="/members/ardaDemirdogen.jpg" lnLink="https://www.linkedin.com/in/arda-demird%C3%B6%C4%9Fen-72b237240/" />
                                     <TeamMemberCard name="Ege Mutlu" role={t('cMechanics')} department={t('aerospace')} imageUrl="/members/egeMutlu.jpg" lnLink="https://www.linkedin.com/in/ege-mutlu-671917284" />
                                     <TeamMemberCard name="Alara Rodoplu" role={t('hScience')} department={t('medicine')} imageUrl="/members/alaraRodoplu.jpg" lnLink="https://www.linkedin.com/in/alara-rodoplu-196923245/" />
-                                    <TeamMemberCard name="Irmak İşal" role={t('hFinance')} department={t('ırmakD')} imageUrl="https://media.licdn.com/dms/image/v2/D4D03AQE9APTpFyiUyw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1710583941967?e=2147483647&v=beta&t=10c22P0AohC2OBuxhOrLzmNeK9jw7g1mQLbKGA1FY5g" lnLink="" />
+                                    <TeamMemberCard name="Irmak İşal" role={t('hFinance')} department={t('ırmakD')} imageUrl="https://media.licdn.com/dms/image/v2/D4D03AQE9APTpFyiUyw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1710583941967?e=2147483647&v=beta&t=10c22P0AohC2OBuxhOrLzmNeK9jw7g1mQLbKGA1FY5g" lnLink="https://www.linkedin.com/in/irmak-i%C5%9Fal-8a64a4162/" />
                                 </div>
-
                             </div>
                         </div>
                     </div>
