@@ -92,12 +92,14 @@ const teamData: TeamData = {
   },
   HumanResourceFinance: {
       en: [
-          { name: "Irmak İşal", role: "Head of the Finance", department: "", imageUrl: "https://media.licdn.com/dms/image/v2/D4D03AQE9APTpFyiUyw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1710583941967?e=2147483647&v=beta&t=10c22P0AohC2OBuxhOrLzmNeK9jw7g1mQLbKGA1FY5g", lnLink: "https://www.linkedin.com/in/irmak-i%C5%9Fal-8a64a4162/" },
+          { name: "Irmak İşal", role: "Head of the Finance", department: "English Translation and Interpreting, and International Trade and Finance", imageUrl: "https://media.licdn.com/dms/image/v2/D4D03AQE9APTpFyiUyw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1710583941967?e=2147483647&v=beta&t=10c22P0AohC2OBuxhOrLzmNeK9jw7g1mQLbKGA1FY5g", lnLink: "https://www.linkedin.com/in/irmak-i%C5%9Fal-8a64a4162/" },
+          { name: "Ece Fişek", role: "Head of the Translation Services", department: "English Translation and Interpreting", imageUrl: "/members/eceFisek.jpg",lnLink:"https://www.linkedin.com/in/ecefisek/" },
    
       ],
       tr: [
-          { name: "Irmak İşal", role: "Mail İşler Sorumlusu", department: "", imageUrl: "https://media.licdn.com/dms/image/v2/D4D03AQE9APTpFyiUyw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1710583941967?e=2147483647&v=beta&t=10c22P0AohC2OBuxhOrLzmNeK9jw7g1mQLbKGA1FY5g", lnLink: "https://www.linkedin.com/in/irmak-i%C5%9Fal-8a64a4162/" },
- 
+          { name: "Irmak İşal", role: "Mail İşler Sorumlusu", department: "İngilizce Mütercim ve Tercümanlık, ve uluslararası Ticaret ve Finans", imageUrl: "https://media.licdn.com/dms/image/v2/D4D03AQE9APTpFyiUyw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1710583941967?e=2147483647&v=beta&t=10c22P0AohC2OBuxhOrLzmNeK9jw7g1mQLbKGA1FY5g", lnLink: "https://www.linkedin.com/in/irmak-i%C5%9Fal-8a64a4162/" },
+          { name: "Ece Fişek", role: "Çeviri Hizmetleri Sorumlusu", department: "İngilizce Mütercim ve Tercümanlık", imageUrl: "/members/eceFisek.jpg",lnLink:"https://www.linkedin.com/in/ecefisek/" },
+   
       ],
   },
 };
