@@ -40,7 +40,7 @@ export default function SponsorshipPage() {
                                         <Image
                                             src={`/sponsorship/${category}.svg`}
                                             alt={category}
-                                            className="max-w-max h-32 md:h-40 lg:h-48 rounded-lg object-contain"
+                                            className="max-w-max h-32 w-full md:h-40 lg:h-48 rounded-lg object-contain"
                                             width={3780}
                                             height={1080}
                                         />
@@ -57,7 +57,7 @@ export default function SponsorshipPage() {
                                                         width={1920}
                                                         height={1080}
                                                         alt={sponsor.label}
-                                                        className="h-36 w-96 rounded-lg"
+                                                        className="h-36 w-full md:w-96 rounded-lg"
                                                     />
                                                 </div>
 
@@ -118,7 +118,7 @@ export default function SponsorshipPage() {
                         <div className="grid gap-8 md:grid-cols-2">
                             {[
                                 {
-                                    title: t('bronzeSponsor'),   
+                                    title: t('bronzeSponsor'),
                                     amount: 'Minimum 15,000 TL',
                                     perks: [
                                         t('brozeInfo1'),
@@ -156,7 +156,7 @@ export default function SponsorshipPage() {
                                     bgColor: 'bg-gradient-to-r from-yellow-400 to-yellow-600',
                                 },
                                 {
-                                    title:  t('diamondSponsor'),
+                                    title: t('diamondSponsor'),
                                     amount: 'Minimum 50,000 TL',
                                     perks: [
                                         t('diamondInfo1'),
@@ -184,7 +184,7 @@ export default function SponsorshipPage() {
                         </div>
                     </div>
                 </section>
-                
+
                 {/* Call to Action Section */}
                 <Contact />
             </main>
