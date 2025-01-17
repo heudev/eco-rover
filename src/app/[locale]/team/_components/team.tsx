@@ -92,8 +92,8 @@ export function Menu() {
         {/* Aktif takımın üyelerini göster */}
         <div className={`grid gap-32 
             ${activeTeam === 'HumanResourceFinance' ? 'grid-cols-1 lg:grid-cols-2' : 
-            activeTeam === 'Science' || activeTeam === 'Mechanics' ? 'grid-cols-1 lg:grid-cols-2' : 
-            activeTeam === 'Electronics' ? 'grid-cols-1 lg:grid-cols-3' : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-4'}`}
+            activeTeam === 'Electronics' || activeTeam === 'Mechanics' ?  'grid-cols-1 lg:grid-cols-3' : 
+            activeTeam === 'Science' ? 'grid-cols-1 lg:grid-cols-2' : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-4'}`}
             >
            {activeTeam && teamData[activeTeam] && teamData[activeTeam][locale] &&  Object(teamData[activeTeam][locale]).map((member: TeamProps, index: number) => (
             <div className="flex justify-center items-center" key={index}>

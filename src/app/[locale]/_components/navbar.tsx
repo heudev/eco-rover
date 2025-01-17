@@ -12,13 +12,15 @@ export default function Navbar() {
         <header className="absolute top-0 left-0 w-full bg-black bg-opacity-50 p-4">
             <div className="container mx-auto flex justify-between items-center">
                 <div className='flex items-center flex-shrink-0'>
-                    <Image
-                        src="/images/logo.png"
-                        alt="Logo"
-                        width={1920}
-                        height={1080}
-                        className='rounded-full w-20 h-20 md:h-32 md:w-32 mx-auto'
-                    />
+                    <Link href="/">
+                        <Image
+                            src="/images/logo.png"
+                            alt="Logo"
+                            width={1920}
+                            height={1080}
+                            className='rounded-full w-20 h-20 md:h-32 md:w-32 mx-auto'
+                        />
+                    </Link>
                 </div>
                 <div className="title-font navbar bg-opacity-0 flex justify-end">
 
