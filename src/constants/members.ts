@@ -97,12 +97,13 @@ const teamData: TeamData = {
       en: [
           { name: "Alara Rodoplu", role: "Head of the Science", department: "Medicine", imageUrl: "/members/alaraRodoplu.jpg", lnLink: "https://www.linkedin.com/in/alara-rodoplu-196923245/" },
           { name: "Ceren Ayık", role: "Science Task", department: "Medicine", imageUrl: "/members/cerenAyik.jpg", lnLink: "https://www.linkedin.com/in/ceren-ay%C4%B1k-38aa26194" },
-    
+          { name: "Deren Canay Şandır", role: "Science Task", department: "Genetics and Bioengineering", imageUrl: "/members/derenCanaySandir.jpg", lnLink: "https://www.linkedin.com/in/deren-canay-sandir/" },
+      
       ],
       tr: [
           { name: "Alara Rodoplu", role: "Bilim Sorumlusu", department: "Tıp", imageUrl: "/members/alaraRodoplu.jpg", lnLink: "https://www.linkedin.com/in/alara-rodoplu-196923245/" },
           { name: "Ceren Ayık", role: "Bilim Görevi", department: "Tıp", imageUrl: "/members/cerenAyik.jpg", lnLink: "https://www.linkedin.com/in/ceren-ay%C4%B1k-38aa26194" },
-  
+          { name: "Deren Canay Şandır", role: "Bilim Görevi", department: "Genetik ve Biyomühendislik", imageUrl: "/members/derenCanaySandir.jpg", lnLink: "https://www.linkedin.com/in/deren-canay-sandir/" },
       ],
   },
   HumanResourceFinance: {
